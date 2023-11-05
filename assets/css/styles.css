@@ -1,0 +1,48 @@
+/* ------------------------------------------------------------------------- variables universales ------------------------------------------------------------------- */
+:root {
+	--scColorPricipal: #1d1e42;
+	--scColorSecudario: #313256;
+	--scColorTerciario: #4a587a;
+	--scColorBlanco: #fff;
+	--scColorTexto: #e5e5e5;
+	--scColorPinck: #ad1ddf;
+	--scColorgris: #56748a;
+}
+*,
+*::after,
+*::before {
+	margin: 0;
+	box-sizing: inherit;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	color: var(--scColorBlanco);
+	background-color: var(--scColorPricipal);
+	font-size: 16px;
+}
+
+/* ------------------------------------------------------------------------- utilidades ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- diseño ------------------------------------------------------------------------- */
+.btn_menu {
+	color: var(--scColorBlanco);
+	padding: 0.5rem;
+	border-radius: 0.4rem;
+	background-color: var(--scColorPinck);
+	width: 4.6rem;
+	height: 4.6rem;
+}
+
+.ico__contenedor__mo {
+	column-gap: 2rem;
+}
+
+.menu__mini {
+	margin-top: 2rem;
+}
