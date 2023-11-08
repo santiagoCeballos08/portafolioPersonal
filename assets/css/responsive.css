@@ -3,13 +3,20 @@
 @media (min-width: 768px) {
 	.contendor__banner {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		justify-items: center;
 	}
 }
 
 /* portatil */
+
 @media (min-width: 1024px) {
 	.circular__image img {
 		max-width: 70rem;
+	}
+
+	.sl__text {
+		font-size: 4.5rem;
 	}
 }
