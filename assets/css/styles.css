@@ -1,4 +1,6 @@
 /* ------------------------------------------------------------------------- variables universales ------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Noto+Serif+Vithkuqi:wght@400;600;700&display=swap');
+
 :root {
 	--scColorPricipal: #1d1e42;
 	--scColorSecudario: #313256;
@@ -7,6 +9,8 @@
 	--scColorTexto: #e5e5e5;
 	--scColorPinck: #ad1ddf;
 	--scColorgris: #56748a;
+	--scColorNegro: #000;
+	--fuentePrincipal: 'Inter', sans-serif;
 }
 *,
 *::after,
@@ -22,13 +26,26 @@ html {
 }
 
 body {
+	font-family: 'Inter', sans-serif !important;
 	color: var(--scColorBlanco);
 	background-color: var(--scColorPricipal);
 	font-size: 16px;
+	line-height: 1.5;
 }
 
 /* ------------------------------------------------------------------------- utilidades ------------------------------------------------------------------------- */
+.content_lang > .active {
+	background-color: #3f3d56;
+}
 
+.btn {
+	padding: 1rem;
+	background: var(--scColorBlanco);
+	text-align: center;
+	border-radius: 5rem;
+	color: var(--scColorNegro);
+	margin: 0.5rem;
+}
 /* ------------------------------------------------------------------------- diseño ------------------------------------------------------------------------- */
 .btn_menu {
 	color: var(--scColorBlanco);
@@ -45,4 +62,102 @@ body {
 
 .menu__mini {
 	margin-top: 2rem;
+	margin-bottom: 4rem;
+}
+
+/* ------------------------------------------------------------------------- menu cover ------------------------------------------------------------------------- */
+.menu__cover__mini {
+	display: none;
+	padding: 2rem;
+	top: 0;
+	z-index: 2;
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(180deg, #44206d 0%, #384764 100%);
+}
+
+.link__contenedor ul li {
+	text-transform: uppercase;
+	padding-bottom: 3rem;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.link__contenedor {
+	margin-bottom: 8rem;
+}
+
+.btn__close {
+	margin-bottom: 10rem;
+}
+
+.lang__cotenedor {
+	padding: 1rem;
+	background-color: var(--scColorBlanco);
+	border-radius: 5rem;
+	overflow: hidden;
+}
+
+.content_lang {
+	column-gap: 2rem;
+}
+
+/* ------------------------------------------------------------------------- bannner ------------------------------------------------------------------------- */
+.contendor__banner {
+	width: 90%;
+}
+.title__banner h1 {
+	font-size: 3.3rem;
+	text-transform: uppercase;
+}
+
+.title__banner h2 {
+	font-size: 5.5rem;
+	text-transform: uppercase;
+}
+
+.sl__text {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+.contenedor__info {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.circular__image {
+	background-color: #adaecf2c;
+	border-radius: 100%;
+}
+.circular__image img {
+	object-fit: contain;
+	object-position: center;
+	aspect-ratio: 1 / 1;
+}
+
+.contenedor__redes__sociales {
+	column-gap: 2rem;
+}
+
+.contenedor__redes__sociales .redes {
+	width: 5rem;
+	height: 5rem;
+	margin-bottom: 4rem;
+}
+
+.btn__sobre_mi {
+	margin-bottom: 4rem;
+}
+
+.btn__me {
+	background: linear-gradient(90deg, var(--scColorgris) 0%, var(--scColorPinck) 100%);
+	width: 70%;
+	padding: 2rem;
+	font-weight: bold;
+	font-size: 2.5rem;
+	text-transform: capitalize;
+	color: var(--scColorBlanco);
 }

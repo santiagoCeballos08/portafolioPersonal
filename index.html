@@ -14,6 +14,7 @@
 		<link href="/dist/output.css" rel="stylesheet" />
 		<!-- css -->
 		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="./assets/css/responsive.css" />
 	</head>
 	<body>
 		<!-- ------------ SECCION ------------
@@ -26,18 +27,108 @@
 					<div class="ico__img__contenedor">
 						<img src="./assets/img/banner/icon_banner.png" alt="icon santiago ceballos" />
 					</div>
-					<p class="font-bold">santiago ceballos</p>
+					<p class="font-bold"><a href="#">Santiago ceballos</a></p>
 				</div>
 				<div class="btn_menu flex justify-center items-center">
-					<a href="#">
+					<a href="#" class="menu-mini-open">
 						<span class="material-symbols-outlined">menu</span>
 					</a>
+				</div>
+			</div>
+			<!-- menu principal grande -->
+			<div class="menu__cover__mini">
+				<div class="flex justify-end btn__close"><span class="material-symbols-outlined"> close </span></div>
+				<div class="link__contenedor flex flex-col items-center text-center">
+					<ul>
+						<li>
+							<a href="">inicio</a>
+						</li>
+						<li>
+							<a href="">sobre mi</a>
+						</li>
+						<li>
+							<a href="">proyectos</a>
+						</li>
+						<li>
+							<a href="">servicios</a>
+						</li>
+						<li>
+							<a href="">contacto</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content_lang flex justify-center">
+					<div class="lang__cotenedor active">
+						<a href=""><img src="./assets/img/ico_es.png" alt="español" /></a>
+					</div>
+					<div class="lang__cotenedor">
+						<a href=""><img src="./assets/img/ico_en.png" alt="ingles" /></a>
+					</div>
 				</div>
 			</div>
 			<div class="menu__grande"></div>
 		</header>
 
+		<!-- FIN DE SECCION HEAD -->
+		<!-- ------------ SECCION ------------
+			SECCION BANNER
+		------------ -->
+		<section class="contendor__hero__benner flex flex-col items-center">
+			<div class="contendor__banner">
+				<div class="seccion__info">
+					<div class="title__banner">
+						<h1 class="font-bold">desarrollador</h1>
+						<h2 class="font-bold">fullstack</h2>
+						<p class="sl__1">Desarrollador web con pasión al desarrollo</p>
+					</div>
+					<div class="contenedor__info">
+						<h2 class="sl__text">santiago</h2>
+						<h2 class="sl__text">ceballos deossa</h2>
+						<div class="contenedor__toggle__words flex justify-between capitalize">
+							<p>diseño</p>
+							<p>desarrollo</p>
+							<p>creación</p>
+							<p>innovación</p>
+						</div>
+					</div>
+					<div class="contenedor__redes__sociales flex justify-around">
+						<div class="redes">
+							<a href="">
+								<div class="contendor_img">
+									<img src="./assets/img/github.png" alt="icon githhub" />
+								</div>
+							</a>
+						</div>
+						<div class="redes">
+							<a href="">
+								<div class="contendor_img">
+									<img src="./assets/img/wapp.png" alt="icon whatsapp" />
+								</div>
+							</a>
+						</div>
+						<div class="redes">
+							<a href="">
+								<div class="contendor_img">
+									<img src="./assets/img/ling.png" alt="icon linkedig" />
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="btn__sobre_mi flex justify-center">
+						<a href="" class="btn btn__me">sobre mi</a>
+					</div>
+				</div>
+				<div class="seccion__img_contenedor flex justify-center items-center">
+					<div class="circular__image">
+						<img src="./assets/img/banner_programing.svg" alt="boy programing" />
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- ** importamos los scripts para el funcionamiento del la web -->
 		<script src="./controllers/main.js"></script>
+		<!-- eventos -->
+		<script src="./assets/js/evntos.js"></script>
 	</body>
 </html>

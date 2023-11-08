@@ -1,0 +1,15 @@
+/* banner */
+/* tablet */
+@media (min-width: 768px) {
+	.contendor__banner {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* portatil */
+@media (min-width: 1024px) {
+	.circular__image img {
+		max-width: 70rem;
+	}
+}
