@@ -7,6 +7,9 @@
 		align-items: center;
 		justify-items: center;
 	}
+	.contenedor__redes__sociales {
+		column-gap: 10rem;
+	}
 }
 
 /* portatil */
@@ -15,8 +18,23 @@
 	.circular__image img {
 		max-width: 70rem;
 	}
+	.title__banner h1 {
+		font-size: 4.3rem;
+		text-transform: uppercase;
+	}
 
+	.title__banner h2 {
+		font-size: 6.5rem;
+		text-transform: uppercase;
+	}
+	.title__banner p {
+		font-size: 2rem;
+	}
+}
+
+/* portatiles */
+@media (min-width: 1200px) {
 	.sl__text {
-		font-size: 4.5rem;
+		font-size: 3.5rem;
 	}
 }

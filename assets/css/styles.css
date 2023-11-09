@@ -46,6 +46,15 @@ body {
 	color: var(--scColorNegro);
 	margin: 0.5rem;
 }
+
+.cabecera-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	animation: ease 2s backwards;
+}
 /* ------------------------------------------------------------------------- diseño ------------------------------------------------------------------------- */
 .btn_menu {
 	color: var(--scColorBlanco);
@@ -61,8 +70,9 @@ body {
 }
 
 .menu__mini {
-	margin-top: 2rem;
-	margin-bottom: 4rem;
+	padding-top: 2rem;
+	padding-bottom: 4rem;
+	background-color: var(--scColorPricipal);
 }
 
 /* ------------------------------------------------------------------------- menu cover ------------------------------------------------------------------------- */
@@ -70,7 +80,7 @@ body {
 	display: none;
 	padding: 2rem;
 	top: 0;
-	z-index: 2;
+	z-index: 4;
 	position: fixed;
 	height: 100vh;
 	width: 100%;
@@ -93,6 +103,8 @@ body {
 }
 
 .lang__cotenedor {
+	height: 5rem;
+	width: 5rem;
 	padding: 1rem;
 	background-color: var(--scColorBlanco);
 	border-radius: 5rem;
@@ -115,6 +127,9 @@ body {
 .title__banner h2 {
 	font-size: 5.5rem;
 	text-transform: uppercase;
+}
+.title__banner p {
+	font-size: 1.5rem;
 }
 
 .sl__text {
@@ -139,7 +154,7 @@ body {
 }
 
 .contenedor__redes__sociales {
-	column-gap: 2rem;
+	column-gap: 5rem;
 }
 
 .contenedor__redes__sociales .redes {
@@ -160,4 +175,18 @@ body {
 	font-size: 2.5rem;
 	text-transform: capitalize;
 	color: var(--scColorBlanco);
+}
+
+/* ------------------------------------------------------------------------- menu grande ------------------------------------------------------------------------- */
+.menu__grande {
+	background-color: var(--scColorPricipal);
+	padding-bottom: 1rem;
+}
+
+.link__contenedor__pc {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	background: linear-gradient(90deg, var(--scColorgris) 0%, var(--scColorPinck) 100%);
+	border-radius: 50rem;
+	padding: 2rem;
 }

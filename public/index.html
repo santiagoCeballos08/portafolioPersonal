@@ -4,7 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Santi.dev👨🏾‍💻</title>
+		<title>Santi Dev</title>
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨🏾‍💻</text></svg>" />
 
 		<!-- google icons -->
 		<link
@@ -22,7 +25,7 @@
 		------------ -->
 		<header class="cabecera__hero">
 			<!-- menu movil -->
-			<div class="menu__mini flex justify-around items-center">
+			<div class="menu__mini flex justify-around items-center lg:hidden">
 				<div class="ico__contenedor__mo flex justify-center items-center">
 					<div class="ico__img__contenedor">
 						<img src="../assets/img/banner/icon_banner.png" alt="icon santiago ceballos" />
@@ -35,7 +38,7 @@
 					</a>
 				</div>
 			</div>
-			<!-- menu principal grande -->
+			<!-- menu principal mini movil -->
 			<div class="menu__cover__mini">
 				<div class="flex justify-end btn__close"><span class="material-symbols-outlined"> close </span></div>
 				<div class="link__contenedor flex flex-col items-center text-center">
@@ -66,27 +69,63 @@
 					</div>
 				</div>
 			</div>
-			<div class="menu__grande"></div>
+
+			<!-- menu grande pc -->
+			<div class="menu__grande hidden lg:flex lg:justify-around lg:mt-10">
+				<div class="ico__contenedor__mo flex justify-center items-center">
+					<div class="ico__img__contenedor">
+						<img src="../assets/img/banner/icon_banner.png" alt="icon santiago ceballos" />
+					</div>
+					<p class="font-bold"><a href="#">Santiago ceballos</a></p>
+				</div>
+				<div class="link__contenedor__pc flex">
+					<ul class="flex justify-around gap-x-8 items-center">
+						<li>
+							<a href="">inicio</a>
+						</li>
+						<li>
+							<a href="">sobre mi</a>
+						</li>
+						<li>
+							<a href="">proyectos</a>
+						</li>
+						<li>
+							<a href="">servicios</a>
+						</li>
+						<li>
+							<a href="">contacto</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content_lang flex justify-center">
+					<div class="lang__cotenedor active">
+						<a href=""><img src="../assets/img/ico_es.png" alt="español" /></a>
+					</div>
+					<div class="lang__cotenedor">
+						<a href=""><img src="../assets/img/ico_en.png" alt="ingles" /></a>
+					</div>
+				</div>
+			</div>
 		</header>
 
 		<!-- FIN DE SECCION HEAD -->
 		<!-- ------------ SECCION ------------
 			SECCION BANNER
 		------------ -->
-		<section class="contendor__hero__benner flex flex-col items-center mt-52">
+		<section class="contendor__hero__benner flex flex-col items-center mt-20 lg:mt-52">
 			<div class="contendor__banner">
 				<div class="seccion__info">
 					<div class="title__banner">
-						<h1 class="font-bold text-12xl">desarrollador</h1>
+						<h1 class="font-bold">desarrollador</h1>
 						<h2 class="font-bold">fullstack</h2>
-						<p class="sl__1">Desarrollador web con pasión al desarrollo</p>
+						<p class="sl__1">Desarrollo con pasión y amor</p>
 					</div>
 					<div class="contenedor__info">
-						<div class="contenedor__nombre md:flex md:gap-x-3">
+						<div class="contenedor__nombre xl:flex md:gap-x-3">
 							<h2 class="sl__text">santiago</h2>
 							<h2 class="sl__text">ceballos deossa</h2>
 						</div>
-						<div class="contenedor__toggle__words flex gap-x-12 md:text-4xl capitalize">
+						<div class="contenedor__toggle__words flex gap-x-4 md:gap-x-12 md:text-3xl capitalize">
 							<p>diseño</p>
 							<p>desarrollo</p>
 							<p>creación</p>
@@ -127,6 +166,16 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- ------------ SECCION ------------
+			SECCION SOBRE MI
+		------------ -->
+		<main class="contenedor__hero__sobremi">
+			<section class="contenedor__sobremi">
+				<article></article>
+				<article></article>
+			</section>
+		</main>
 
 		<!-- ** importamos los scripts para el funcionamiento del la web -->
 		<script src="../controllers/main.js"></script>

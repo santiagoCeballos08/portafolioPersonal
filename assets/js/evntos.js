@@ -16,3 +16,21 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.querySelector('.menu__cover__mini').style.display = 'block';
 	});
 });
+
+/* cabera */
+let headMovil = document.querySelector('.menu__mini');
+let headPc = document.querySelector('.menu__grande');
+let higthPcCabecera = headPc.scrollHeight;
+let higthMovilCabecera = headMovil.scrollHeight;
+window.addEventListener('scroll', (e) => {
+	if (window.scrollY > higthMovilCabecera) {
+		headMovil.classList.add('cabecera-header');
+	} else {
+		headMovil.classList.remove('cabecera-header');
+	}
+	if (window.scrollY > higthPcCabecera) {
+		headPc.classList.add('cabecera-header');
+	} else {
+		headPc.classList.remove('cabecera-header');
+	}
+});
