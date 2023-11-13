@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="../assets/css/styles.css" />
 		<link rel="stylesheet" href="../assets/css/responsive.css" />
 	</head>
+
 	<body>
 		<!-- ------------ SECCION ------------
 			HEADER
@@ -47,7 +48,7 @@
 							<a href="">inicio</a>
 						</li>
 						<li>
-							<a href="">sobre mi</a>
+							<a href="#sobremi">sobre mi</a>
 						</li>
 						<li>
 							<a href="">proyectos</a>
@@ -71,7 +72,7 @@
 			</div>
 
 			<!-- menu grande pc -->
-			<div class="menu__grande hidden lg:flex lg:justify-around lg:mt-10">
+			<div class="menu__grande hidden lg:flex lg:justify-around lg:pt-10">
 				<div class="ico__contenedor__mo flex justify-center items-center">
 					<div class="ico__img__contenedor">
 						<img src="../assets/img/banner/icon_banner.png" alt="icon santiago ceballos" />
@@ -112,7 +113,7 @@
 		<!-- ------------ SECCION ------------
 			SECCION BANNER
 		------------ -->
-		<section class="contendor__hero__benner flex flex-col items-center mt-20 lg:mt-52">
+		<section class="contendor__hero__benner flex flex-col items-center mt-20 lg:mt-52 mb-12">
 			<div class="contendor__banner">
 				<div class="seccion__info">
 					<div class="title__banner">
@@ -159,7 +160,7 @@
 						<a href="" class="btn btn__me self-center md:self-start">sobre mi</a>
 					</div>
 				</div>
-				<div class="seccion__img_contenedor flex justify-center items-center">
+				<div class="seccion__img_contenedor md:flex md:justify-center md:items-center hidden">
 					<div class="circular__image">
 						<img src="../assets/img/banner_programing.svg" alt="boy programing" />
 					</div>
@@ -170,10 +171,37 @@
 		<!-- ------------ SECCION ------------
 			SECCION SOBRE MI
 		------------ -->
-		<main class="contenedor__hero__sobremi">
-			<section class="contenedor__sobremi">
-				<article></article>
-				<article></article>
+		<main class="contenedor__hero__sobremi grid grid-rows-1 justify-items-center" id="sobremi">
+			<section class="contenedor__sobremi md:flex">
+				<article class="contenedor__informacion md:flex md:items-center md:gap-x-6">
+					<div class="contenedor__img__soremi mb-20 lg:mb-0 flex">
+						<img
+							src="../assets/img/foto_sobremi.png"
+							loading="lazy"
+							alt="imagen sobre mi"
+							class="contenedor__img__sobremi" />
+					</div>
+					<div class="info__sobremi flex flex-col gap-y-10">
+						<h3 class="text-center font-bold text-5xl uppercase">Sobre mi</h3>
+						<p>
+							Hola, mi nombre es Santiago. Soy un desarrollador con experiencia en desarrollo web y móvil, complementado
+							con habilidades en diseño gráfico. He trabajado con tecnologías como JavaScript, PHP, Node.js y PWA. En mi
+							anterior posición en Kubico S.A.S, lideré un proyecto que desarrolle credimásApp, una aplicación que
+							alcanzó más de 1000 descargas en su primer mes. Estoy comprometido con el aprendizaje continuo, habiendo
+							obtenido certificaciones en JavaScript Moderno y Desarrollo FullSatck. Mi pasión por la música y la
+							lectura refleja mi dedicación al autodesarrollo y el enriquecimiento continuo. En el ámbito profesional,
+							valoro la responsabilidad y la puntualidad, asegurándome de que cada proyecto se complete con la más alta
+							calidad y dentro del plazo acordado.
+						</p>
+						<a
+							download="CV santiago ceballos"
+							href="../assets/files/CV_santiago_ceballos.pdf"
+							class="btn_menu descargar__cv self-center">
+							CV
+						</a>
+					</div>
+				</article>
+				<article class="contenedor__experiencia"></article>
 			</section>
 		</main>
 
