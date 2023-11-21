@@ -8,8 +8,7 @@
 		"lib": "lib"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "node --watch index.js "
+		"app": "node --watch index.js"
 	},
 	"keywords": [],
 	"author": "",
