@@ -534,8 +534,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mt-52 {
-  margin-top: 13rem;
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mt-20 {
@@ -550,8 +554,16 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -574,13 +586,8 @@ video {
   justify-content: space-around;
 }
 
-.gap-x-12 {
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
-}
-
-.gap-y-12 {
-  row-gap: 3rem;
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-x-4 {
@@ -593,6 +600,14 @@ video {
        column-gap: 2rem;
 }
 
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
 .self-center {
   align-self: center;
 }
@@ -601,8 +616,17 @@ video {
   text-align: center;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .capitalize {
@@ -610,24 +634,12 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:mt-4 {
-    margin-top: 1rem;
-  }
-
-  .md\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
-  .md\:block {
-    display: block;
-  }
-
   .md\:flex {
     display: flex;
   }
 
-  .md\:hidden {
-    display: none;
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:justify-start {
@@ -638,8 +650,9 @@ video {
     justify-content: center;
   }
 
-  .md\:justify-around {
-    justify-content: space-around;
+  .md\:gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 
   .md\:gap-x-3 {
@@ -647,39 +660,24 @@ video {
          column-gap: 0.75rem;
   }
 
-  .md\:gap-x-12 {
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
+  .md\:gap-x-6 {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 
   .md\:self-start {
     align-self: flex-start;
   }
 
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:mt-10 {
-    margin-top: 2.5rem;
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:mt-52 {
@@ -696,6 +694,10 @@ video {
 
   .lg\:justify-around {
     justify-content: space-around;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 }
 
