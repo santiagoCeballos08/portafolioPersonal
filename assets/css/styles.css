@@ -213,3 +213,7 @@ body {
 .contenedor__img__soremi {
 	min-width: 30rem;
 }
+
+.contenedor__experiencia {
+	position: relative;
+}

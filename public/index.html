@@ -171,10 +171,10 @@
 		<!-- ------------ SECCION ------------
 			SECCION SOBRE MI
 		------------ -->
-		<main class="contenedor__hero__sobremi grid grid-rows-1 justify-items-center" id="sobremi">
-			<section class="contenedor__sobremi md:flex">
-				<article class="contenedor__informacion md:flex md:items-center md:gap-x-6">
-					<div class="contenedor__img__soremi mb-20 lg:mb-0 flex">
+		<main class="contenedor__hero__sobremi flex justify-center" id="sobremi">
+			<section class="contenedor__sobremi md:flex md:flex-wrap">
+				<article class="contenedor__informacion md:flex md:items-center md:gap-x-6 mb-20 lg:mb-0">
+					<div class="contenedor__img__soremi mb-20 lg:mb-0 flex justify-center">
 						<img
 							src="/assets/img/foto_sobremi.png"
 							loading="lazy"
@@ -201,7 +201,15 @@
 						</a>
 					</div>
 				</article>
-				<article class="contenedor__experiencia"></article>
+				<article class="contenedor__experiencia flex flex-col">
+					<h3 class="text-center text-5xl font-bold uppercase">Experiencia</h3>
+					<div class="icon__experiencia">
+						<div class="contenedor__imagen__experiencia">
+							<img src="" alt="imagen de experiencia" />
+						</div>
+						<div class="exeriencia__descripcion">años</div>
+					</div>
+				</article>
 			</section>
 		</main>
 
