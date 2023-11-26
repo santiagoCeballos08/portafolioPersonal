@@ -1,0 +1,7 @@
+#esto se hacee la configuracion para dacker docker up y alzar todos los comandos para el empaquetar
+version: "3.9"
+services:
+  portafolio:
+    build: .
+    ports:
+      - "3000:3000"

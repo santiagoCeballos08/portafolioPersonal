@@ -1,5 +1,5 @@
-FROM nginx:alpine
+FROM node:20
 RUN mkdir -p /home/app
-COPY  . /home/app
-COPY  ./default.conf /etc/nginx/conf.d/default.conf
-EXPOSE 80
+COPY . /home/app
+EXPOSE 3000
+CMD [ "node", "/home/app/index.js" ]
