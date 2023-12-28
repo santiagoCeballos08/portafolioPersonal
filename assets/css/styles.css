@@ -34,6 +34,15 @@ body {
 	line-height: 1.5;
 }
 
+body::-webkit-scrollbar {
+	width: 7px;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--scColorPinck);
+	border-radius: 10px;
+}
 /* ------------------------------------------------------------------------- utilidades ------------------------------------------------------------------------- */
 .content_lang > .active {
 	background-color: #3f3d56;
@@ -214,6 +223,26 @@ body {
 	min-width: 30rem;
 }
 
-.contenedor__experiencia {
+/* ------------------------------------------------------------------------- experiencia ------------------------------------------------------------------------- */
+.contenedor__expriencia {
 	position: relative;
+}
+.bubble__experiencia {
+	background-color: var(--scColorgris);
+	width: 9rem;
+	height: 9rem;
+	padding: 1rem;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+}
+
+.bubble__experiencia img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center center;
 }
