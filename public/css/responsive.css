@@ -13,7 +13,6 @@
 }
 
 /* portatil */
-
 @media (min-width: 1024px) {
 	.circular__image img {
 		max-width: 70rem;
@@ -32,8 +31,26 @@
 	}
 }
 
-/* portatiles */
+/* computadoras */
 @media (min-width: 1200px) {
+	.contenedor__sobremi {
+		justify-items: center;
+	}
+
+	.contendor__hero__benner {
+		height: 100vh;
+		margin-top: 8rem;
+	}
+
+	.contenedor__img__soremi img {
+		width: 90%;
+		max-width: 40rem;
+	}
+
+	.contenedor__img__soremi {
+		display: flex;
+		justify-content: flex-end;
+	}
 	.sl__text {
 		font-size: 3.5rem;
 	}

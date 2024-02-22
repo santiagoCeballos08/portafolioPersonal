@@ -495,6 +495,15 @@ video {
 .left-72 {
   left: 18rem;
 }
+.left-10 {
+  left: 2.5rem;
+}
+.left-12 {
+  left: 3rem;
+}
+.left-px {
+  left: 1px;
+}
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -507,11 +516,25 @@ video {
 .mt-20 {
   margin-top: 5rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
 .flex {
   display: flex;
 }
 .hidden {
   display: none;
+}
+.rotate-3 {
+  --tw-rotate: 3deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .flex-col {
   flex-direction: column;
@@ -545,12 +568,34 @@ video {
 .self-center {
   align-self: center;
 }
+.pb-4 {
+  padding-bottom: 1rem;
+}
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
 .text-center {
   text-align: center;
 }
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .font-bold {
   font-weight: 700;
