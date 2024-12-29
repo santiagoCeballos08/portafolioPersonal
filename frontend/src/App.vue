@@ -1,6 +1,8 @@
 <script setup lang="ts">
 	import AboutMeComponent from './components/AboutMeComponent.vue';
 	import BannerComponent from './components/BannerComponent.vue';
+	import ProyectsComponent from './components/ProyectsComponent.vue';
+	import ServiceComponent from './components/ServiceComponent.vue';
 </script>
 
 <template>
@@ -29,9 +31,6 @@
 				<div class="link__contenedor flex flex-col items-center text-center">
 					<ul>
 						<li>
-							<a href="" class="hover:underline hover:underline-offset-4">inicio</a>
-						</li>
-						<li>
 							<a href="#sobremi" class="hover:underline hover:underline-offset-4">sobre mi</a>
 						</li>
 						<li>
@@ -45,18 +44,19 @@
 						</li>
 					</ul>
 				</div>
-				<div class="content_lang flex justify-center">
+				<!-- TODO: activar mas adelante el tema de la traducion -->
+				<!-- <div class="content_lang flex justify-center">
 					<div class="lang__cotenedor active">
 						<a href=""><img src="./assets/img/ico_es.png" alt="español" /></a>
 					</div>
 					<div class="lang__cotenedor">
 						<a href=""><img src="./assets/img/ico_en.png" alt="ingles" /></a>
 					</div>
-				</div>
+				</div> -->
 			</div>
 
 			<!-- menu grande pc -->
-			<div class="menu__grande hidden lg:flex lg:justify-around lg:pt-10">
+			<div class="menu__grande hidden lg:flex lg:justify-around lg:pt-10 fixed top-0 w-full z-20">
 				<div class="ico__contenedor__mo flex justify-center items-center">
 					<div class="ico__img__contenedor">
 						<img src="./assets/img/banner/icon_banner.png" alt="icon santiago ceballos" />
@@ -66,9 +66,6 @@
 				<div class="link__contenedor__pc flex">
 					<ul class="flex justify-around gap-x-8 items-center">
 						<li>
-							<a href="" class="hover:underline hover:underline-offset-4">inicio</a>
-						</li>
-						<li>
 							<a href="#sobremi" class="hover:underline hover:underline-offset-4">sobre mi</a>
 						</li>
 						<li>
@@ -82,14 +79,16 @@
 						</li>
 					</ul>
 				</div>
-				<div class="content_lang flex justify-center">
+
+				<!-- TODO: activar mas adelante el tema de la traducion -->
+				<!-- <div class="content_lang flex justify-center">
 					<div class="lang__cotenedor active">
 						<a href=""><img src="./assets/img/ico_es.png" alt="español" /></a>
 					</div>
 					<div class="lang__cotenedor">
 						<a href=""><img src="./assets/img/ico_en.png" alt="ingles" /></a>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</header>
 
@@ -100,6 +99,11 @@
 		abutme
 		------------ -->
 		<AboutMeComponent />
+
+		<!-- ------------ SECCION ------------
+			section proyects
+		------------ -->
+		<ProyectsComponent />
 	</div>
 </template>
 

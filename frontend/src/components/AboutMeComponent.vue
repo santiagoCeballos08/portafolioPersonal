@@ -1,9 +1,9 @@
 <template>
-	<div>
+	<div class="flex justify-center mb-40">
 		<!-- ------------ SECCION ------------
 			SECCION SOBRE MI
 		------------ -->
-		<main class="contenedor__hero__sobremi container mx-auto" id="sobremi">
+		<main class="contenedor__hero__sobremi container flex justify-center" id="sobremi">
 			<section class="contenedor__sobremi md:flex md:justify-center">
 				<article class="contenedor__informacion md:flex md:items-center md:gap-x-6">
 					<div class="contenedor__img__soremi mb-20 lg:mb-0 flex">
@@ -14,7 +14,7 @@
 							class="contenedor__img__sobremi" />
 					</div>
 					<div class="info__sobremi flex flex-col gap-y-10 lg:max-w-[600px]">
-						<h3 class="text-center font-bold text-8xl uppercase">Sobre mi</h3>
+						<h3 class="text-center font-bold text-8xl uppercase opacity-50">Sobre mi</h3>
 						<p>
 							Hola, mi nombre es Santiago. Soy un desarrollador con experiencia en desarrollo web y móvil,
 							complementado con habilidades en diseño gráfico. He trabajado con tecnologías como
@@ -29,7 +29,7 @@
 						<a
 							download="CV santiago ceballos"
 							href="../assets/files/CV_santiago_ceballos.pdf"
-							class="btn_menu descargar__cv self-center">
+							class="btn_menu descargar__cv self-center shadow-md hover:translate-y-[-0.5rem] transition-all mt-20">
 							CV
 						</a>
 					</div>
