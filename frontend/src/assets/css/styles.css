@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Noto+Serif+Vithkuqi:wght@400;600;700&display=swap');
 
 :root {
-	--scColorPricipal: #1d1e42;
-	--scColorSecudario: #313256;
-	--scColorTerciario: #4a587a;
-	--scColorBlanco: #fff;
-	--scColorTexto: #e5e5e5;
-	--scColorPinck: #ad1ddf;
-	--scColorgris: #56748a;
-	--scColorNegro: #000;
+	--scColorPricipal: hsl(238, 39%, 19%);
+	--scColorSecudario: hsl(238, 27%, 26%);
+	--scColorTerciario: hsl(223, 24%, 38%);
+	--scColorBlanco: hsl(0, 0%, 100%);
+	--scColorTexto: hsl(0, 0%, 90%);
+	--scColorPinck: hsl(285, 77%, 49%);
+	--scColorgris: hsl(205, 23%, 44%);
+	--scColorNegro: hsl(0, 0%, 0%);
 	--fuentePrincipal: 'Inter', sans-serif;
-	--coloGradianteP: linear-gradient(90deg, #44206d 0%, #384764 100%);
+	--coloGradianteP: linear-gradient(90deg, hsl(268, 55%, 28%) 0%, hsl(220, 28%, 31%) 100%);
 }
 *,
 *::after,
