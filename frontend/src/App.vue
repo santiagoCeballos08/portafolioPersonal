@@ -104,6 +104,11 @@
 			section proyects
 		------------ -->
 		<ProyectsComponent />
+
+		<!-- ------------ SECCION ------------
+			section servis
+		------------ -->
+		<ServiceComponent />
 	</div>
 </template>
 

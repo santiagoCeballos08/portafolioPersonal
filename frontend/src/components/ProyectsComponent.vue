@@ -1,98 +1,151 @@
 <template>
-	<div class="container mx-auto" id="proyects">
+	<div class="container mx-auto mb-40" id="proyects">
 		<h1 class="uppercase text-center text-6xl font-bold mb-10 opacity-50">proyectos relevantes</h1>
 
 		<section class="container__proyects p-8 md:p-0">
-			<article class="proyects__card rounded-xl">
-				<div class="card__img">
-					<img src="https://placehold.co/400x300" alt="imagen de proyecto" class="w-full rounded-xl" />
-				</div>
-				<div class="card__info p-4">
-					<h3 class="capitalize hover:underline font-bold">
-						<a href="https://www.alcaldiasoacha.gov.co/">alcaldia de soacha</a>
-					</h3>
-					<div class="card__info__icons languaje-use">
-						<span>
-							<img src="" alt="icon tecnologia" />
-						</span>
+			<article class="proyects__card rounded-xl hover:translate-y-[-0.5rem] transition-all">
+				<a href="https://www.alcaldiasoacha.gov.co/">
+					<div class="card__img">
+						<img
+							loading="lazy"
+							src="../assets/img/proyects/soacha.webp"
+							alt="imagen de proyecto"
+							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
-				</div>
+					<div class="card__info p-4">
+						<h3 class="capitalize hover:underline font-bold cursor-pointer">alcaldia de soacha</h3>
+						<div class="card__info__icons languaje-use">
+							<span class="flex gap-4 justify-center m-4">
+								<img loading="lazy" src="../assets/img/technology/js.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/tl.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/html.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/css.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/csh.svg" alt="icon tecnologia" />
+							</span>
+						</div>
+					</div>
+				</a>
 			</article>
-			<article class="proyects__card rounded-xl">
-				<div class="card__img">
-					<img src="https://placehold.co/400x300" alt="imagen de proyecto" class="w-full rounded-xl" />
-				</div>
-				<div class="card__info p-4">
-					<h3 class="capitalize hover:underline font-bold">
-						<a href="https://app.credimas.us/mascredimas/credimas/informacionapp/publicidad_app.php"
-							>Credimas app PWA</a
-						>
-					</h3>
-					<div class="card__info__icons languaje-use">
-						<span>
-							<img src="" alt="icon tecnologia" />
-						</span>
+			<article class="proyects__card rounded-xl hover:translate-y-[-0.5rem] transition-all">
+				<a href="https://app.credimas.us/mascredimas/credimas/informacionapp/publicidad_app.php">
+					<div class="card__img">
+						<img
+							loading="lazy"
+							src="../assets/img/proyects/credimas.webp"
+							alt="imagen de proyecto"
+							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
-				</div>
+					<div class="card__info p-4">
+						<h3 class="capitalize hover:underline font-bold">Credimas app PWA</h3>
+						<div class="card__info__icons languaje-use">
+							<span class="flex gap-4 justify-center m-4">
+								<img loading="lazy" src="../assets/img/technology/js.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/tl.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/html.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/css.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/pwa.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/node.svg" alt="icon tecnologia" />
+							</span>
+						</div>
+					</div>
+				</a>
 			</article>
 
-			<article class="proyects__card rounded-xl">
-				<div class="card__img">
-					<img src="https://placehold.co/400x300" alt="imagen de proyecto" class="w-full rounded-xl" />
-				</div>
-				<div class="card__info p-4">
-					<h3 class="capitalize hover:underline font-bold">
-						<a href="nitrolix.com">nitrolix</a>
-					</h3>
-					<div class="card__info__icons languaje-use">
-						<span>
-							<img src="" alt="icon tecnologia" />
-						</span>
+			<article class="proyects__card rounded-xl hover:translate-y-[-0.5rem] transition-all">
+				<a href="https://nitrolix.com/">
+					<div class="card__img">
+						<img
+							loading="lazy"
+							src="../assets/img/proyects/nitrolix.webp"
+							alt="imagen de proyecto"
+							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
-				</div>
+					<div class="card__info p-4">
+						<h3 class="capitalize hover:underline font-bold">nitrolix</h3>
+						<div class="card__info__icons languaje-use">
+							<span class="flex gap-4 justify-center m-4">
+								<img loading="lazy" src="../assets/img/technology/js.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/tl.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/html.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/css.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/node.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/laravel.svg" alt="icon tecnologia" />
+							</span>
+						</div>
+					</div>
+				</a>
 			</article>
-			<article class="proyects__card rounded-xl">
-				<div class="card__img">
-					<img src="https://placehold.co/400x300" alt="imagen de proyecto" class="w-full rounded-xl" />
-				</div>
-				<div class="card__info p-4">
-					<h3 class="capitalize hover:underline font-bold">
-						<a href="https://www.salma.com.co/">salma guro</a>
-					</h3>
-					<div class="card__info__icons languaje-use">
-						<span>
-							<img src="" alt="icon tecnologia" />
-						</span>
+			<article class="proyects__card rounded-xl hover:translate-y-[-0.5rem] transition-all">
+				<a href="https://www.salma.com.co/">
+					<div class="card__img">
+						<img
+							loading="lazy"
+							src="../assets/img/proyects/salma.webp"
+							alt="imagen de proyecto"
+							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
-				</div>
+					<div class="card__info p-4">
+						<h3 class="capitalize hover:underline font-bold">salma</h3>
+						<div class="card__info__icons languaje-use">
+							<div class="card__info__icons languaje-use">
+								<span class="flex gap-4 justify-center m-4">
+									<img loading="lazy" src="../assets/img/technology/js.svg" alt="icon tecnologia" />
+									<img loading="lazy" src="../assets/img/technology/tl.svg" alt="icon tecnologia" />
+									<img loading="lazy" src="../assets/img/technology/html.svg" alt="icon tecnologia" />
+									<img loading="lazy" src="../assets/img/technology/css.svg" alt="icon tecnologia" />
+									<img loading="lazy" src="../assets/img/technology/pwa.svg" alt="icon tecnologia" />
+									<img loading="lazy" src="../assets/img/technology/node.svg" alt="icon tecnologia" />
+								</span>
+							</div>
+						</div>
+					</div>
+				</a>
 			</article>
-			<article class="proyects__card rounded-xl">
-				<div class="card__img">
-					<img src="https://placehold.co/400x300" alt="imagen de proyecto" class="w-full rounded-xl" />
-				</div>
-				<div class="card__info p-4">
-					<h3 class="capitalize hover:underline font-bold">
-						<a href="https://touris.world/login">touris</a>
-					</h3>
-					<div class="card__info__icons languaje-use">
-						<span>
-							<img src="" alt="icon tecnologia" />
-						</span>
+			<article class="proyects__card rounded-xl hover:translate-y-[-0.5rem] transition-all">
+				<a href="https://touris.world/login">
+					<div class="card__img">
+						<img
+							loading="lazy"
+							src="../assets/img/proyects/touris.webp"
+							alt="imagen de proyecto"
+							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
-				</div>
+					<div class="card__info p-4">
+						<h3 class="capitalize hover:underline font-bold">touris</h3>
+						<div class="card__info__icons languaje-use">
+							<span class="flex gap-4 justify-center m-4">
+								<img loading="lazy" src="../assets/img/technology/vue.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/js.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/css.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/laravel.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/sass.svg" alt="icon tecnologia" />
+							</span>
+						</div>
+					</div>
+				</a>
 			</article>
-			<article class="proyects__card rounded-xl">
-				<div class="card__img">
-					<img src="https://placehold.co/400x300" alt="imagen de proyecto" class="w-full rounded-xl" />
-				</div>
-				<div class="card__info p-4">
-					<h3>name proyect</h3>
-					<div class="card__info__icons languaje-use">
-						<span>
-							<img src="" alt="icon tecnologia" />
-						</span>
+			<article class="proyects__card rounded-xl hover:translate-y-[-0.5rem] transition-all">
+				<a href="https://astounding-maamoul-8440ee.netlify.app/">
+					<div class="card__img">
+						<img
+							loading="lazy"
+							src="../assets/img/proyects/guitarra.webp"
+							alt="imagen de proyecto"
+							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
-				</div>
+					<div class="card__info p-4">
+						<h3 class="capitalize hover:underline font-bold">guitarLA</h3>
+						<div class="card__info__icons languaje-use">
+							<span class="flex gap-4 justify-center m-4">
+								<img loading="lazy" src="../assets/img/technology/vue.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/js.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/tl.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/css.svg" alt="icon tecnologia" />
+								<img loading="lazy" src="../assets/img/technology/sass.svg" alt="icon tecnologia" />
+							</span>
+						</div>
+					</div>
+				</a>
 			</article>
 		</section>
 	</div>
@@ -107,7 +160,12 @@
 		gap: 2rem;
 
 		.proyects__card {
-			background-color: red;
+			background-color: hsla(0, 17%, 89%, 0.404);
+
+			.card__info__icons span img {
+				max-width: 3rem;
+				max-height: 3rem;
+			}
 		}
 	}
 </style>
