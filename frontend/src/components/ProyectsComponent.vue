@@ -2,6 +2,15 @@
 	<div class="container mx-auto mb-40" id="proyects">
 		<h1 class="uppercase text-center text-6xl font-bold mb-10 opacity-50">proyectos relevantes</h1>
 
+		<p class="max-w-[800px] text-center mx-auto mb-10">
+			En mis 3 años de experiencia como desarrollador fullstack y mis servicios como freelance, he trabajado en
+			diversos proyectos utilizando Angular, Vue.js, Laravel, PHP, MySQL, HTML, CSS, y Figma. Mi enfoque principal
+			ha sido crear aplicaciones web dinámicas y sistemas a medida, integrando backend robustos, bases de datos
+			optimizadas y diseños centrados en el usuario. Gracias a mi experiencia freelance, he desarrollado
+			soluciones adaptadas a las necesidades específicas de mis clientes, siempre priorizando la calidad y
+			eficiencia.
+		</p>
+
 		<section class="container__proyects p-8 md:p-0">
 			<article class="proyects__card rounded-xl hover:translate-y-[-0.5rem] transition-all">
 				<a href="https://www.alcaldiasoacha.gov.co/">
@@ -13,7 +22,7 @@
 							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
 					<div class="card__info p-4">
-						<h3 class="capitalize hover:underline font-bold cursor-pointer">alcaldia de soacha</h3>
+						<h3 class="capitalize hover:underline font-bold text-3xl mb-4">alcaldia de soacha</h3>
 						<div class="card__info__icons languaje-use">
 							<span class="flex gap-4 justify-center m-4">
 								<img loading="lazy" src="../assets/img/technology/js.svg" alt="icon tecnologia" />
@@ -36,7 +45,7 @@
 							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
 					<div class="card__info p-4">
-						<h3 class="capitalize hover:underline font-bold">Credimas app PWA</h3>
+						<h3 class="capitalize hover:underline font-bold text-3xl mb-4">Credimas app PWA</h3>
 						<div class="card__info__icons languaje-use">
 							<span class="flex gap-4 justify-center m-4">
 								<img loading="lazy" src="../assets/img/technology/js.svg" alt="icon tecnologia" />
@@ -61,7 +70,7 @@
 							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
 					<div class="card__info p-4">
-						<h3 class="capitalize hover:underline font-bold">nitrolix</h3>
+						<h3 class="capitalize hover:underline font-bold text-3xl mb-4">nitrolix</h3>
 						<div class="card__info__icons languaje-use">
 							<span class="flex gap-4 justify-center m-4">
 								<img loading="lazy" src="../assets/img/technology/js.svg" alt="icon tecnologia" />
@@ -85,7 +94,7 @@
 							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
 					<div class="card__info p-4">
-						<h3 class="capitalize hover:underline font-bold">salma</h3>
+						<h3 class="capitalize hover:underline font-bold text-3xl mb-4">salma</h3>
 						<div class="card__info__icons languaje-use">
 							<div class="card__info__icons languaje-use">
 								<span class="flex gap-4 justify-center m-4">
@@ -111,7 +120,7 @@
 							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
 					<div class="card__info p-4">
-						<h3 class="capitalize hover:underline font-bold">touris</h3>
+						<h3 class="capitalize hover:underline font-bold text-3xl mb-4">touris</h3>
 						<div class="card__info__icons languaje-use">
 							<span class="flex gap-4 justify-center m-4">
 								<img loading="lazy" src="../assets/img/technology/vue.svg" alt="icon tecnologia" />
@@ -134,7 +143,7 @@
 							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
 					<div class="card__info p-4">
-						<h3 class="capitalize hover:underline font-bold">guitarLA</h3>
+						<h3 class="capitalize hover:underline font-bold text-3xl mb-4">guitarLA</h3>
 						<div class="card__info__icons languaje-use">
 							<span class="flex gap-4 justify-center m-4">
 								<img loading="lazy" src="../assets/img/technology/vue.svg" alt="icon tecnologia" />
@@ -156,7 +165,7 @@
 <style scoped lang="scss">
 	.container__proyects {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
 		gap: 2rem;
 
 		.proyects__card {
@@ -166,6 +175,12 @@
 				max-width: 3rem;
 				max-height: 3rem;
 			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		.container__proyects {
+			grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
 		}
 	}
 </style>
