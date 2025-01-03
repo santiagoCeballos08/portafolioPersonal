@@ -10,6 +10,10 @@
 	.contenedor__redes__sociales {
 		column-gap: 10rem;
 	}
+
+	.card-badge {
+		font-size: 1.8rem;
+	}
 }
 
 /* portatil */

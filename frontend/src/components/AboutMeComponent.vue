@@ -28,7 +28,7 @@
 						</p>
 						<a
 							download="CV santiago ceballos"
-							href="../assets/files/CV_santiago_ceballos.pdf"
+							href="/files/CV_santiago_ceballos.pdf"
 							class="btn_menu descargar__cv self-center shadow-md hover:translate-y-[-0.5rem] transition-all mt-20">
 							CV
 						</a>

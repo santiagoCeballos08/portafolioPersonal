@@ -34,14 +34,15 @@
 							<a href="#sobremi" class="hover:underline hover:underline-offset-4">sobre mi</a>
 						</li>
 						<li>
-							<a href="" class="hover:underline hover:underline-offset-4">proyectos</a>
+							<a href="#proyects" class="hover:underline hover:underline-offset-4">proyectos</a>
 						</li>
 						<li>
-							<a href="" class="hover:underline hover:underline-offset-4">servicios</a>
+							<a href="#service" class="hover:underline hover:underline-offset-4">servicios</a>
 						</li>
-						<li>
+						<!-- TODO: crear seccion de contacto -->
+						<!-- <li>
 							<a href="" class="hover:underline hover:underline-offset-4">contacto</a>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 				<!-- TODO: activar mas adelante el tema de la traducion -->
@@ -74,9 +75,10 @@
 						<li>
 							<a href="" class="hover:underline hover:underline-offset-4">servicios</a>
 						</li>
-						<li>
+						<!-- TODO: crear seccion de contacto -->
+						<!-- <li>
 							<a href="" class="hover:underline hover:underline-offset-4">contacto</a>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 
