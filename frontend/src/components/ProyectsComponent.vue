@@ -180,6 +180,11 @@
 
 	@media (min-width: 768px) {
 		.container__proyects {
+			grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+		}
+	}
+	@media (min-width: 1024px) {
+		.container__proyects {
 			grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
 		}
 	}

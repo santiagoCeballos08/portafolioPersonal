@@ -24,21 +24,23 @@
 					<div class="btn__sobre_mi flex justify-center flex-col">
 						<div class="contenedor__redes__sociales flex justify-center md:justify-start gap-y-12">
 							<div class="redes">
-								<a href="">
+								<a href="https://github.com/santiagoCeballos08" target="_blank">
 									<div class="contendor_img">
 										<img src="../assets/img/github.png" alt="icon githhub" />
 									</div>
 								</a>
 							</div>
 							<div class="redes">
-								<a href="">
+								<a href="https://wa.link/7gzos8" target="_blank">
 									<div class="contendor_img">
 										<img src="../assets/img/wapp.png" alt="icon whatsapp" />
 									</div>
 								</a>
 							</div>
 							<div class="redes">
-								<a href="">
+								<a
+									href="https://www.linkedin.com/in/santiago-ceballos-deossa-5410421b8/"
+									target="_blank">
 									<div class="contendor_img">
 										<img src="../assets/img/ling.png" alt="icon linkedig" />
 									</div>

@@ -11,7 +11,7 @@
 			</p>
 
 			<div class="flex w-full items-center justify-center">
-				<div class="grid w-full gap-10 p-2 grid-cols-1 md:grid-cols-3 md:grid-rows-5 min-h-[50rem]">
+				<div class="grid w-full gap-10 p-2 grid-cols-1 lg:grid-cols-3 lg:grid-rows-5 min-h-[50rem]">
 					<article
 						class="bg-secundaryColor md:col-span-1 md:row-span-4 rounded-lg shadow-md flex flex-col items-center p-4">
 						<div class="card__header__info">
@@ -167,16 +167,40 @@
 					</article>
 
 					<article
-						class="bg-secundaryColor md:col-span-1 md:row-span-2 rounded-lg shadow-md flex justify-center items-center p-4 h-[20rem] service-1">
+						class="bg-secundaryColor md:col-span-1 md:row-span-2 rounded-lg shadow-md flex justify-center items-center p-4 min-h-[20rem] service-1">
 						<h3 class="text-5xl uppercase font-bold">Desarrollo web</h3>
 					</article>
 
 					<article
-						class="bg-secundaryColor md:col-span-1 md:row-span-2 rounded-lg shadow-md flex justify-center p-4">
-						<div class="card__header__info">
+						class="bg-secundaryColor md:col-span-1 md:row-span-2 rounded-lg shadow-md flex flex-col p-4">
+						<div class="card__header__info self-center mb-10">
 							<h2 class="text-5xl font-bold capitalize">habilidades blandas</h2>
 						</div>
-						<div class=""></div>
+						<div class="card__content__habilidades">
+							<ul class="capitalize flex flex-wrap gap-2">
+								<li class="card-badge flex gap-2 justify-center items-center">
+									<font-awesome-icon icon="hexagon-nodes" /> Metodología Scrum
+								</li>
+								<li class="card-badge flex gap-2 justify-center items-center">
+									<font-awesome-icon icon="users" /> Cumunicación
+								</li>
+								<li class="card-badge flex gap-2 justify-center items-center">
+									<font-awesome-icon icon="person-chalkboard" /> Liderazgo
+								</li>
+								<li class="card-badge flex gap-2 justify-center items-center">
+									<font-awesome-icon icon="lightbulb" /> creatividad
+								</li>
+								<li class="card-badge flex gap-2 justify-center items-center">
+									<font-awesome-icon icon="folder-open" /> Organizado
+								</li>
+								<li class="card-badge flex gap-2 justify-center items-center">
+									<font-awesome-icon icon="people-group" /> Trabajo en equipo
+								</li>
+								<li class="card-badge flex gap-2 justify-center items-center">
+									<font-awesome-icon icon="brain" /> Pensamiento crítico
+								</li>
+							</ul>
+						</div>
 					</article>
 
 					<article

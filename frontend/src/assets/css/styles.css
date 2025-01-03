@@ -10,6 +10,8 @@
 	--scColorPinck: hsl(285, 77%, 49%);
 	--scColorgris: hsl(205, 23%, 44%);
 	--scColorNegro: hsl(0, 0%, 0%);
+	--border-radius: 1rem;
+	--border-radius: 0.8rem;
 	--fuentePrincipal: 'Inter', sans-serif;
 	--coloGradianteP: linear-gradient(90deg, hsl(268, 55%, 28%) 0%, hsl(220, 28%, 31%) 100%);
 }
@@ -59,6 +61,13 @@ body {
 	animation: ease 2s backwards;
 }
 
+.card-badge {
+	background-color: var(--scColorPricipal);
+	padding: 0.5rem 1rem;
+	border-radius: var(--border-radius);
+	font-size: 1.2rem;
+}
+
 /* ------------------------------------------------------------------------- diseño ------------------------------------------------------------------------- */
 .btn_menu {
 	color: var(--scColorBlanco);
@@ -66,7 +75,6 @@ body {
 	border-radius: 0.4rem;
 	background-color: var(--scColorPinck);
 	width: 4.6rem;
-	height: 4.6rem;
 }
 
 .ico__contenedor__mo {

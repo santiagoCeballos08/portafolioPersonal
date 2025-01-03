@@ -13,6 +13,13 @@ import {
 	faChartLine,
 	faChartArea,
 	faChartPie,
+	faUserGroup,
+	faUsers,
+	faHexagonNodes,
+	faFolderOpen,
+	faPeopleGroup,
+	faLightbulb,
+	faBrain,
 } from '@fortawesome/free-solid-svg-icons';
 import { faFigma, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
@@ -30,6 +37,13 @@ library.add(
 	faChartLine,
 	faChartPie,
 	faChartArea,
+	faUserGroup,
+	faUsers,
+	faHexagonNodes,
+	faFolderOpen,
+	faPeopleGroup,
+	faLightbulb,
+	faBrain,
 );
 
 export default FontAwesomeIcon;
