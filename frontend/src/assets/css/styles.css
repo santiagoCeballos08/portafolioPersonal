@@ -1,4 +1,11 @@
 /* ------------------------------------------------------------------------- variables universales ------------------------------------------------------------------- */
+@import 'tailwindcss';
+
+@theme {
+	--color-primaryColor: #1e1f43;
+	--color-secundaryColor: #4a5778;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Noto+Serif+Vithkuqi:wght@400;600;700&display=swap');
 
 :root {

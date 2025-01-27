@@ -3,6 +3,7 @@
 	import BannerComponent from './components/BannerComponent.vue';
 	import ProyectsComponent from './components/ProyectsComponent.vue';
 	import ServiceComponent from './components/ServiceComponent.vue';
+	import FooterComponent from './components/FooterComponent.vue';
 </script>
 
 <template>
@@ -111,6 +112,11 @@
 			section servis
 		------------ -->
 		<ServiceComponent />
+
+		<!-- ------------ SECCION ------------
+			section footer
+		------------ -->
+		<FooterComponent />
 	</div>
 </template>
 
