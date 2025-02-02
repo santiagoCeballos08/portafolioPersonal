@@ -1,5 +1,5 @@
 <template>
-	<section class="">
+	<section class="contentedor__hero__footer">
 		<p>footer</p>
 	</section>
 </template>

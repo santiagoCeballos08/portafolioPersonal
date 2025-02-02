@@ -1,5 +1,5 @@
 <template>
-	<section class="contendor__hero__benner flex flex-col items-center mt-20 lg:mt-52 mb-12">
+	<section class="contendor__hero__benner flex flex-col items-center mt-20 mb-40 lg:mt-52 mb-12">
 		<div class="contendor__banner">
 			<div class="seccion__info">
 				<div class="title__banner">
