@@ -1,5 +1,5 @@
 <template>
-	<div class="flex justify-center mb-40">
+	<div class="flex justify-center !mb-40">
 		<!-- ------------ SECCION ------------
 			SECCION SOBRE MI
 		------------ -->

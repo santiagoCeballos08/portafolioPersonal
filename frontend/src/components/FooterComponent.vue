@@ -1,7 +1,7 @@
 <template>
-	<section class="contentedor__hero__footer">
+	<footer class="contentedor__hero__footer bg-gray-800">
 		<p>footer</p>
-	</section>
+	</footer>
 </template>
 
 <script setup></script>

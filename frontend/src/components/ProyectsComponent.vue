@@ -1,8 +1,8 @@
 <template>
-	<div class="container mx-auto mb-40" id="proyects">
+	<div class="container !mx-auto !mb-40" id="proyects">
 		<h1 class="uppercase text-center text-6xl font-bold mb-10 opacity-50">proyectos relevantes</h1>
 
-		<p class="max-w-[800px] text-center mx-auto mb-10">
+		<p class="max-w-[800px] text-center !mx-auto !mb-10">
 			En mis 3 años de experiencia como desarrollador fullstack y mis servicios como freelance, he trabajado en
 			diversos proyectos utilizando Angular, Vue.js, Laravel, PHP, MySQL, HTML, CSS, y Figma. Mi enfoque principal
 			ha sido crear aplicaciones web dinámicas y sistemas a medida, integrando backend robustos, bases de datos
@@ -21,7 +21,7 @@
 							alt="imagen de proyecto"
 							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
-					<div class="card__info p-4">
+					<div class="card__info !p-4">
 						<h3 class="capitalize hover:underline font-bold text-3xl mb-4">alcaldia de soacha</h3>
 						<div class="card__info__icons languaje-use">
 							<span class="flex gap-4 justify-center m-4">

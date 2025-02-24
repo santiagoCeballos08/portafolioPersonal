@@ -1,6 +1,11 @@
+@import 'tailwindcss';
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Noto+Serif+Vithkuqi:wght@400;600;700&display=swap'); */
 /* ------------------------------------------------------------------------- variables universales ------------------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Noto+Serif+Vithkuqi:wght@400;600;700&display=swap');
+@theme {
+	--color-primaryColor: #1e1f43;
+	--color-secundaryColor: #4a5778;
+}
 
 :root {
 	--scColorPricipal: hsl(238, 38%, 19%);
@@ -33,7 +38,7 @@ body {
 	font-family: 'Inter', sans-serif !important;
 	color: var(--scColorBlanco);
 	background-color: var(--scColorPricipal);
-	font-size: 16px;
+	font-size: 1.6rem;
 	line-height: 1.6;
 	text-wrap: pretty;
 }
