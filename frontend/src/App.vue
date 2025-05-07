@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 	import AboutMeComponent from './components/AboutMeComponent.vue';
 	import BannerComponent from './components/BannerComponent.vue';
 	import ProyectsComponent from './components/ProyectsComponent.vue';
@@ -120,4 +120,4 @@
 	</div>
 </template>
 
-<style scoped></style>
+<style></style>

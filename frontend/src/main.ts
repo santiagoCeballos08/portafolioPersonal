@@ -1,11 +1,8 @@
 import { createApp } from 'vue';
-
-import './assets/css/input.css';
-import './assets/css/styles.css';
-import './assets/css/responsive.css';
-
 import FontAwesomeIcon from './plugins/font-awesome';
 
+import './assets/css/styles.css';
+import './assets/css/responsive.css';
 import App from './App.vue';
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');

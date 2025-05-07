@@ -1,5 +1,11 @@
 /* ------------------------------------------------------------------------- variables universales ------------------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Noto+Serif+Vithkuqi:wght@400;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+	--color-primaryColor: oklch(25.96% 0.066 279.52);
+	--color-secundaryColor: oklch(45.96% 0.057 267.59);
+}
 
 :root {
 	--scColorPricipal: hsl(238, 38%, 19%);
@@ -18,9 +24,7 @@
 *,
 *::after,
 *::before {
-	margin: 0;
 	box-sizing: inherit;
-	padding: 0;
 }
 
 html {

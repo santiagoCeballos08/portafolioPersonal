@@ -213,9 +213,9 @@
 	</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup></script>
 
-<style lang="scss" scoped>
+<style scoped>
 	#service {
 		background: linear-gradient(0deg, hsla(238, 38%, 19%, 0.747) 10%, hsla(238, 38%, 19%, 0.767) 100%),
 			url(../assets/img/fondo_tuercas.svg);
