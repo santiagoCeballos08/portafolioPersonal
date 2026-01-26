@@ -20,8 +20,9 @@ import {
 	faPeopleGroup,
 	faLightbulb,
 	faBrain,
+	faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
-import { faFigma, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFigma, faTwitter, faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 // Agrega los íconos a la librería
 library.add(
@@ -44,6 +45,10 @@ library.add(
 	faPeopleGroup,
 	faLightbulb,
 	faBrain,
+	faEnvelope,
+	faGithub,
+	faLinkedin,
+	faWhatsapp,
 );
 
 export default FontAwesomeIcon;

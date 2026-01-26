@@ -18,9 +18,7 @@
 *,
 *::after,
 *::before {
-	margin: 0;
 	box-sizing: inherit;
-	padding: 0;
 }
 
 html {

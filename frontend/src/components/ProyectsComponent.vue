@@ -15,10 +15,7 @@
 			<article class="proyects__card rounded-xl hover:translate-y-[-0.5rem] transition-all">
 				<a href="https://www.alcaldiasoacha.gov.co/">
 					<div class="card__img">
-						<img
-							loading="lazy"
-							src="../assets/img/proyects/soacha.webp"
-							alt="imagen de proyecto"
+						<img loading="lazy" src="../assets/img/proyects/soacha.webp" alt="imagen de proyecto"
 							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
 					<div class="card__info p-4">
@@ -38,10 +35,7 @@
 			<article class="proyects__card rounded-xl hover:translate-y-[-0.5rem] transition-all">
 				<a href="https://app.credimas.us/mascredimas/credimas/informacionapp/publicidad_app.php">
 					<div class="card__img">
-						<img
-							loading="lazy"
-							src="../assets/img/proyects/credimas.webp"
-							alt="imagen de proyecto"
+						<img loading="lazy" src="../assets/img/proyects/credimas.webp" alt="imagen de proyecto"
 							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
 					<div class="card__info p-4">
@@ -63,10 +57,7 @@
 			<article class="proyects__card rounded-xl hover:translate-y-[-0.5rem] transition-all">
 				<a href="https://nitrolix.com/">
 					<div class="card__img">
-						<img
-							loading="lazy"
-							src="../assets/img/proyects/nitrolix.webp"
-							alt="imagen de proyecto"
+						<img loading="lazy" src="../assets/img/proyects/nitrolix.webp" alt="imagen de proyecto"
 							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
 					<div class="card__info p-4">
@@ -87,10 +78,7 @@
 			<article class="proyects__card rounded-xl hover:translate-y-[-0.5rem] transition-all">
 				<a href="https://www.salma.com.co/">
 					<div class="card__img">
-						<img
-							loading="lazy"
-							src="../assets/img/proyects/salma.webp"
-							alt="imagen de proyecto"
+						<img loading="lazy" src="../assets/img/proyects/salma.webp" alt="imagen de proyecto"
 							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
 					<div class="card__info p-4">
@@ -113,10 +101,7 @@
 			<article class="proyects__card rounded-xl hover:translate-y-[-0.5rem] transition-all">
 				<a href="https://touris.world/login">
 					<div class="card__img">
-						<img
-							loading="lazy"
-							src="../assets/img/proyects/touris.webp"
-							alt="imagen de proyecto"
+						<img loading="lazy" src="../assets/img/proyects/touris.webp" alt="imagen de proyecto"
 							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
 					<div class="card__info p-4">
@@ -136,10 +121,7 @@
 			<article class="proyects__card rounded-xl hover:translate-y-[-0.5rem] transition-all">
 				<a href="https://astounding-maamoul-8440ee.netlify.app/">
 					<div class="card__img">
-						<img
-							loading="lazy"
-							src="../assets/img/proyects/guitarra.webp"
-							alt="imagen de proyecto"
+						<img loading="lazy" src="../assets/img/proyects/guitarra.webp" alt="imagen de proyecto"
 							class="w-full rounded-xl h-[31rem] object-cover" />
 					</div>
 					<div class="card__info p-4">
@@ -163,29 +145,30 @@
 <script setup lang="ts"></script>
 
 <style scoped lang="scss">
+.container__proyects {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+	gap: 2rem;
+
+	.proyects__card {
+		background-color: hsla(0, 17%, 89%, 0.404);
+
+		.card__info__icons span img {
+			max-width: 3rem;
+			max-height: 3rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
 	.container__proyects {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
-		gap: 2rem;
-
-		.proyects__card {
-			background-color: hsla(0, 17%, 89%, 0.404);
-
-			.card__info__icons span img {
-				max-width: 3rem;
-				max-height: 3rem;
-			}
-		}
+		grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
 	}
+}
 
-	@media (min-width: 768px) {
-		.container__proyects {
-			grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-		}
+@media (min-width: 1024px) {
+	.container__proyects {
+		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
 	}
-	@media (min-width: 1024px) {
-		.container__proyects {
-			grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
-		}
-	}
+}
 </style>

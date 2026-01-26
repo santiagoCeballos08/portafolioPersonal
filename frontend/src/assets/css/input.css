@@ -1,3 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+
+@theme {
+	--color-primaryColor: #1e1f43;
+	--color-secundaryColor: #4a5778;
+}
