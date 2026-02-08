@@ -13,36 +13,36 @@
 			<div class="flex w-full items-center justify-center">
 				<div class="grid w-full gap-10 p-2 grid-cols-1 lg:grid-cols-3 lg:grid-rows-5 min-h-[50rem]">
 					<article
-						class="bg-secundaryColor md:col-span-1 md:row-span-4 rounded-lg shadow-md flex flex-col items-center p-4">
+						class="bg-secundaryColor md:col-span-1 md:row-span-4 rounded-lg shadow-md flex flex-col items-center p-4 h-fit">
 						<div class="card__header__info">
 							<h2 class="text-5xl font-bold capitalize">servicios</h2>
 						</div>
 						<div class="conent__service__box grid grid-cols-2 grid-rows-3 gap-4 pt-20">
 							<div
 								class="box service__box bg-primaryColor p-4 rounded-md flex flex-col items-center text-center">
-								<font-awesome-icon icon="code" class="h-[4rem]" />
+								<font-awesome-icon icon="code" class="h-16" />
 								desarrollo web
 							</div>
 							<div
 								class="box service__box bg-primaryColor p-4 rounded-md flex flex-col items-center text-center">
-								<font-awesome-icon icon="person-chalkboard" class="h-[4rem]" />
+								<font-awesome-icon icon="person-chalkboard" class="h-16" />
 								consultoria
 							</div>
 							<div
 								class="box service__box bg-primaryColor p-4 rounded-md flex flex-col items-center text-center">
-								<font-awesome-icon icon="fa-brands fa-figma" class="h-[4rem]" />
+								<font-awesome-icon icon="fa-brands fa-figma" class="h-16" />
 
 								diseño web
 							</div>
 							<div
 								class="box service__box bg-primaryColor p-4 rounded-md flex flex-col items-center text-center">
-								<font-awesome-icon icon="mobile" class="h-[4rem]" />
+								<font-awesome-icon icon="mobile" class="h-16" />
 
 								desarrollo movil
 							</div>
 							<div
 								class="box service__box bg-primaryColor p-4 rounded-md flex flex-col items-center text-center">
-								<font-awesome-icon icon="chart-line" class="h-[4rem]" />
+								<font-awesome-icon icon="chart-line" class="h-16" />
 								análisis de datos
 							</div>
 						</div>
@@ -54,115 +54,61 @@
 							<h2 class="text-5xl font-bold capitalize mb-14">Herramientas</h2>
 						</div>
 						<div class="content__service__tools grid grid-cols-5 gap-4">
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://angular.dev/"
-								><img height="50" src="https://skillicons.dev/icons?i=angular"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://vuejs.org/"
-								><img height="50" src="https://skillicons.dev/icons?i=vue"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://nodejs.org/en"
-								><img height="50" src="https://skillicons.dev/icons?i=nodejs"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://www.php.net/"
-								><img height="50" src="https://skillicons.dev/icons?i=php"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://developer.mozilla.org/es/docs/Web/HTML/Element/html"
-								><img height="50" src="https://skillicons.dev/icons?i=html"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://developer.mozilla.org/es/docs/Web/CSS"
-								><img height="50" src="https://skillicons.dev/icons?i=css"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://developer.mozilla.org/es/docs/Web/JavaScript"
-								><img height="50" src="https://skillicons.dev/icons?i=js"
-							/></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://angular.dev/"><img height="50"
+									src="https://skillicons.dev/icons?i=angular" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://vuejs.org/"><img height="50"
+									src="https://skillicons.dev/icons?i=vue" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://nodejs.org/en"><img height="50"
+									src="https://skillicons.dev/icons?i=nodejs" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://www.php.net/"><img height="50"
+									src="https://skillicons.dev/icons?i=php" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://developer.mozilla.org/es/docs/Web/HTML/Element/html"><img height="50"
+									src="https://skillicons.dev/icons?i=html" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://developer.mozilla.org/es/docs/Web/CSS"><img height="50"
+									src="https://skillicons.dev/icons?i=css" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://developer.mozilla.org/es/docs/Web/JavaScript"><img height="50"
+									src="https://skillicons.dev/icons?i=js" /></a>
 
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://www.typescriptlang.org/"
-								><img height="50" src="https://skillicons.dev/icons?i=ts"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://tailwindcss.com/"
-								><img height="50" src="https://skillicons.dev/icons?i=tailwind"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://getbootstrap.com/"
-								><img height="50" src="https://skillicons.dev/icons?i=bootstrap"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://www.mysql.com/"
-								><img height="50" src="https://skillicons.dev/icons?i=mysql"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://laravel.com/"
-								><img height="50" src="https://skillicons.dev/icons?i=laravel"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://flutter.dev/"
-								><img height="50" src="https://skillicons.dev/icons?i=flutter"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://www.figma.com/"
-								><img height="50" src="https://skillicons.dev/icons?i=figma"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://www.docker.com/"
-								><img height="50" src="https://skillicons.dev/icons?i=docker"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://code.visualstudio.com/"
-								><img height="50" src="https://skillicons.dev/icons?i=vscode"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://git-scm.com/"
-								><img height="50" src="https://skillicons.dev/icons?i=git"
-							/></a>
-							<a
-								target="_blank"
-								class="hover:translate-y-[-0.5rem] transition-all"
-								href="https://aws.amazon.com/es/"
-								><img height="50" src="https://skillicons.dev/icons?i=aws"
-							/></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://www.typescriptlang.org/"><img height="50"
+									src="https://skillicons.dev/icons?i=ts" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://tailwindcss.com/"><img height="50"
+									src="https://skillicons.dev/icons?i=tailwind" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://getbootstrap.com/"><img height="50"
+									src="https://skillicons.dev/icons?i=bootstrap" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://www.mysql.com/"><img height="50"
+									src="https://skillicons.dev/icons?i=mysql" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://laravel.com/"><img height="50"
+									src="https://skillicons.dev/icons?i=laravel" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://flutter.dev/"><img height="50"
+									src="https://skillicons.dev/icons?i=flutter" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://www.figma.com/"><img height="50"
+									src="https://skillicons.dev/icons?i=figma" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://www.docker.com/"><img height="50"
+									src="https://skillicons.dev/icons?i=docker" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://code.visualstudio.com/"><img height="50"
+									src="https://skillicons.dev/icons?i=vscode" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://git-scm.com/"><img height="50"
+									src="https://skillicons.dev/icons?i=git" /></a>
+							<a target="_blank" class="hover:translate-y-[-0.5rem] transition-all"
+								href="https://aws.amazon.com/es/"><img height="50"
+									src="https://skillicons.dev/icons?i=aws" /></a>
 						</div>
 					</article>
 
@@ -216,25 +162,25 @@
 <script setup lang="ts"></script>
 
 <style lang="scss" scoped>
-	#service {
-		background: linear-gradient(0deg, hsla(238, 38%, 19%, 0.747) 10%, hsla(238, 38%, 19%, 0.767) 100%),
-			url(../assets/img/fondo_tuercas.svg);
-		background-size: cover;
-	}
+#service {
+	background: linear-gradient(0deg, hsla(238, 38%, 19%, 0.747) 10%, hsla(238, 38%, 19%, 0.767) 100%),
+		url(../assets/img/fondo_tuercas.svg);
+	background-size: cover;
+}
 
-	.service-1 {
-		background: linear-gradient(0deg, hsla(238, 38%, 19%, 0.747), hsla(238, 38%, 19%, 0.747)),
-			url(../assets/img/services_bg-1.webp);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
+.service-1 {
+	background: linear-gradient(0deg, hsla(238, 38%, 19%, 0.747), hsla(238, 38%, 19%, 0.747)),
+		url(../assets/img/services_bg-1.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
-	.service-2 {
-		background: linear-gradient(0deg, hsla(238, 38%, 19%, 0.747), hsla(238, 38%, 19%, 0.747)),
-			url(../assets/img/services_bg-2.webp);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
+.service-2 {
+	background: linear-gradient(0deg, hsla(238, 38%, 19%, 0.747), hsla(238, 38%, 19%, 0.747)),
+		url(../assets/img/services_bg-2.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 </style>

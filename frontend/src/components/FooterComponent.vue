@@ -71,7 +71,7 @@
 		<!-- Copyright -->
 		<div class="footer__bottom">
 			<div class="footer__bottom-content">
-				<p>© 2026 Santiago Ceballos. Todos los derechos reservados.</p>
+				<p>© {{ year }} Santiago Ceballos. Todos los derechos reservados.</p>
 				<p class="footer__made-with">
 					Hecho con <span class="heart">❤</span> y mucho <span class="coffee">☕</span>
 				</p>
@@ -81,6 +81,12 @@
 </template>
 
 <script setup lang="ts">
+import { format } from '@formkit/tempo';
+
+const date = new Date();
+
+const year = format(date, 'YYYY');
+
 </script>
 
 <style scoped>
