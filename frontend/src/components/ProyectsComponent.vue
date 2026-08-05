@@ -13,6 +13,7 @@
 
 		<section class="container__proyects p-8 md:p-0">
 
+
 			<article class="proyects__card rounded-xl hover:translate-y-[-0.5rem] transition-all">
 				<a href="https://app.credimas.us/mascredimas/credimas/informacionapp/publicidad_app.php">
 					<div class="card__img">
