@@ -1,4 +1,6 @@
-# Logs
+# ==========================================
+# Logs y Debugging
+# ==========================================
 logs
 *.log
 npm-debug.log*
@@ -7,18 +9,44 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# ==========================================
+# Dependencias y Builds (Vite, Vue 3 & NestJS)
+# ==========================================
+node_modules/
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
 
-# Editor directories and files
+# ==========================================
+# Archivos de Entorno y Secretos
+# ==========================================
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ==========================================
+# Archivos Temporales y Testing
+# ==========================================
+.nx/cache
+.tmp
+.temp
+coverage/
+.nyc_output/
+*.lcov
+
+# ==========================================
+# Configuración de IDEs y Sistemas Operativos
+# ==========================================
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+!.vscode/settings.json
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+.DS_Store
+Thumbs.db
