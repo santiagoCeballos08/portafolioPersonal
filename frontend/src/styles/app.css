@@ -1,133 +1,124 @@
-@import "tailwindcss";
-
+@import 'tailwindcss';
 
 /* ------------------------------------------------------------------------- configuracion global y utilidades ------------------------------------------------------------------------- */
 
 :root {
-  /* ==========================================
+	/* ==========================================
      1. FONDO PRINCIPAL (Dark Background)
      ========================================== */
-  --bg-50:  oklch(0.965 0.007 274.5);
-  --bg-100: oklch(0.922 0.012 276.1);
-  --bg-200: oklch(0.835 0.026 277.9);
-  --bg-300: oklch(0.728 0.041 278.4);
-  --bg-400: oklch(0.589 0.065 277.8);
-  --bg-500: oklch(0.468 0.081 277.8);
-  --bg-600: oklch(0.383 0.076 278.3);
-  --bg-700: oklch(0.312 0.063 278.1);
-  --bg-800: oklch(0.228 0.046 278.9);
-  --bg-900: oklch(0.183 0.029 278.1); /* Fondo Principal de la web */
-  --bg-950: oklch(0.134 0.018 277.5);
+	--bg-50: oklch(0.965 0.007 274.5);
+	--bg-100: oklch(0.922 0.012 276.1);
+	--bg-200: oklch(0.835 0.026 277.9);
+	--bg-300: oklch(0.728 0.041 278.4);
+	--bg-400: oklch(0.589 0.065 277.8);
+	--bg-500: oklch(0.468 0.081 277.8);
+	--bg-600: oklch(0.383 0.076 278.3);
+	--bg-700: oklch(0.312 0.063 278.1);
+	--bg-800: oklch(0.228 0.046 278.9);
+	--bg-900: oklch(0.183 0.029 278.1); /* Fondo Principal de la web */
+	--bg-950: oklch(0.134 0.018 277.5);
 
+	--primary-50: oklch(0.978 0.012 316.6);
+	--primary-100: oklch(0.938 0.038 314.9);
+	--primary-200: oklch(0.884 0.076 313.3);
+	--primary-300: oklch(0.804 0.139 311.6);
+	--primary-400: oklch(0.71 0.21 307.7);
+	--primary-500: oklch(0.627 0.257 302.7);
+	--primary-600: oklch(0.541 0.27 293); /* Botones principales "Sobre Mí" */
+	--primary-700: oklch(0.482 0.245 292.8);
+	--primary-800: oklch(0.428 0.207 292.2);
+	--primary-900: oklch(0.369 0.168 291.6);
+	--primary-950: oklch(0.264 0.126 291.1);
 
-  --primary-50:  oklch(0.978 0.012 316.6);
-  --primary-100: oklch(0.938 0.038 314.9);
-  --primary-200: oklch(0.884 0.076 313.3);
-  --primary-300: oklch(0.804 0.139 311.6);
-  --primary-400: oklch(0.710 0.210 307.7);
-  --primary-500: oklch(0.627 0.257 302.7);
-  --primary-600: oklch(0.541 0.270 293.0); /* Botones principales "Sobre Mí" */
-  --primary-700: oklch(0.482 0.245 292.8);
-  --primary-800: oklch(0.428 0.207 292.2);
-  --primary-900: oklch(0.369 0.168 291.6);
-  --primary-950: oklch(0.264 0.126 291.1);
+	--secondary-50: oklch(0.984 0.019 200.9);
+	--secondary-100: oklch(0.96 0.051 200.7);
+	--secondary-200: oklch(0.923 0.088 198.8);
+	--secondary-300: oklch(0.865 0.127 197.1);
+	--secondary-400: oklch(0.789 0.154 194.8);
+	--secondary-500: oklch(0.715 0.143 193.3); /* Detalle cyan / gradientes */
+	--secondary-600: oklch(0.609 0.126 195.3);
+	--secondary-700: oklch(0.518 0.111 197.8);
+	--secondary-800: oklch(0.443 0.093 200.5);
+	--secondary-900: oklch(0.383 0.076 202.3);
+	--secondary-950: oklch(0.279 0.054 204.6);
 
+	--surface-50: oklch(0.984 0.003 247.9);
+	--surface-100: oklch(0.968 0.007 247.9);
+	--surface-200: oklch(0.929 0.013 255.5);
+	--surface-300: oklch(0.869 0.022 252.9);
+	--surface-400: xoklch(0.704 0.04 256.8);
+	--surface-500: oklch(0.554 0.046 257.4);
+	--surface-600: oklch(0.446 0.043 257.3);
+	--surface-700: xoklch(0.372 0.044 257.3);
+	--surface-800: oklch(0.265 0.063 277.2); /* Tarjetas secundarias */
+	--surface-900: oklch(0.208 0.04 277.3); /* Contenedores oscuros elevados */
 
-  --secondary-50:  oklch(0.984 0.019 200.9);
-  --secondary-100: oklch(0.960 0.051 200.7);
-  --secondary-200: oklch(0.923 0.088 198.8);
-  --secondary-300: oklch(0.865 0.127 197.1);
-  --secondary-400: oklch(0.789 0.154 194.8);
-  --secondary-500: oklch(0.715 0.143 193.3); /* Detalle cyan / gradientes */
-  --secondary-600: oklch(0.609 0.126 195.3);
-  --secondary-700: oklch(0.518 0.111 197.8);
-  --secondary-800: oklch(0.443 0.093 200.5);
-  --secondary-900: oklch(0.383 0.076 202.3);
-  --secondary-950: oklch(0.279 0.054 204.6);
-
-
-  --surface-50:  oklch(0.984 0.003 247.9);
-  --surface-100: oklch(0.968 0.007 247.9);
-  --surface-200: oklch(0.929 0.013 255.5);
-  --surface-300: oklch(0.869 0.022 252.9);
-  --surface-400: xoklch(0.704 0.040 256.8);
-  --surface-500: oklch(0.554 0.046 257.4);
-  --surface-600: oklch(0.446 0.043 257.3);
-  --surface-700: xoklch(0.372 0.044 257.3);
-  --surface-800: oklch(0.265 0.063 277.2); /* Tarjetas secundarias */
-  --surface-900: oklch(0.208 0.040 277.3); /* Contenedores oscuros elevados */
-
-  /* ==========================================
+	/* ==========================================
      5. GRADIENTE Y FUENTES
      ========================================== */
-  --gradient-banner: linear-gradient(
-    90deg, 
-    var(--primary-600) 0%, 
-    var(--secondary-500) 100%
-  );
-  --font-main: 'DM Mono', monospace, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas;
+	--gradient-banner: linear-gradient(90deg, var(--primary-600) 0%, var(--secondary-500) 100%);
+	--font-main: 'DM Mono', monospace, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas;
 }
 /* ------------------------------------------------------------------------- configuracion variables y utilidades tailwindcss ------------------------------------------------------------------------- */
 
-
 @theme {
-  /* Mapeo del color Dark/Background */
-  --color-dark-50:  var(--bg-50);
-  --color-dark-100: var(--bg-100);
-  --color-dark-200: var(--bg-200);
-  --color-dark-300: var(--bg-300);
-  --color-dark-400: var(--bg-400);
-  --color-dark-500: var(--bg-500);
-  --color-dark-600: var(--bg-600);
-  --color-dark-700: var(--bg-700);
-  --color-dark-800: var(--bg-800);
-  --color-dark-900: var(--bg-900);
-  --color-dark-950: var(--bg-950);
+	/* Mapeo del color Dark/Background */
+	--color-dark-50: var(--bg-50);
+	--color-dark-100: var(--bg-100);
+	--color-dark-200: var(--bg-200);
+	--color-dark-300: var(--bg-300);
+	--color-dark-400: var(--bg-400);
+	--color-dark-500: var(--bg-500);
+	--color-dark-600: var(--bg-600);
+	--color-dark-700: var(--bg-700);
+	--color-dark-800: var(--bg-800);
+	--color-dark-900: var(--bg-900);
+	--color-dark-950: var(--bg-950);
 
-  /* Mapeo del color Primario (Púrpura) */
-  --color-primary-50:  var(--primary-50);
-  --color-primary-100: var(--primary-100);
-  --color-primary-200: var(--primary-200);
-  --color-primary-300: var(--primary-300);
-  --color-primary-400: var(--primary-400);
-  --color-primary-500: var(--primary-500);
-  --color-primary-600: var(--primary-600);
-  --color-primary-700: var(--primary-700);
-  --color-primary-800: var(--primary-800);
-  --color-primary-900: var(--primary-900);
-  --color-primary-950: var(--primary-950);
+	/* Mapeo del color Primario (Púrpura) */
+	--color-primary-50: var(--primary-50);
+	--color-primary-100: var(--primary-100);
+	--color-primary-200: var(--primary-200);
+	--color-primary-300: var(--primary-300);
+	--color-primary-400: var(--primary-400);
+	--color-primary-500: var(--primary-500);
+	--color-primary-600: var(--primary-600);
+	--color-primary-700: var(--primary-700);
+	--color-primary-800: var(--primary-800);
+	--color-primary-900: var(--primary-900);
+	--color-primary-950: var(--primary-950);
 
-  /* Mapeo del color Secundario (Cian) */
-  --color-secondary-50:  var(--secondary-50);
-  --color-secondary-100: var(--secondary-100);
-  --color-secondary-200: var(--secondary-200);
-  --color-secondary-300: var(--secondary-300);
-  --color-secondary-400: var(--secondary-400);
-  --color-secondary-500: var(--secondary-500);
-  --color-secondary-600: var(--secondary-600);
-  --color-secondary-700: var(--secondary-700);
-  --color-secondary-800: var(--secondary-800);
-  --color-secondary-900: var(--secondary-900);
-  --color-secondary-950: var(--secondary-950);
+	/* Mapeo del color Secundario (Cian) */
+	--color-secondary-50: var(--secondary-50);
+	--color-secondary-100: var(--secondary-100);
+	--color-secondary-200: var(--secondary-200);
+	--color-secondary-300: var(--secondary-300);
+	--color-secondary-400: var(--secondary-400);
+	--color-secondary-500: var(--secondary-500);
+	--color-secondary-600: var(--secondary-600);
+	--color-secondary-700: var(--secondary-700);
+	--color-secondary-800: var(--secondary-800);
+	--color-secondary-900: var(--secondary-900);
+	--color-secondary-950: var(--secondary-950);
 
-  /* Mapeo de Superficies/Cards */
-  --color-surface-50:  var(--surface-50);
-  --color-surface-100: var(--surface-100);
-  --color-surface-200: var(--surface-200);
-  --color-surface-300: var(--surface-300);
-  --color-surface-400: var(--surface-400);
-  --color-surface-500: var(--surface-500);
-  --color-surface-600: var(--surface-600);
-  --color-surface-700: var(--surface-700);
-  --color-surface-800: var(--surface-800);
-  --color-surface-900: var(--surface-900);
-  --font-main: var(--font-main);
+	/* Mapeo de Superficies/Cards */
+	--color-surface-50: var(--surface-50);
+	--color-surface-100: var(--surface-100);
+	--color-surface-200: var(--surface-200);
+	--color-surface-300: var(--surface-300);
+	--color-surface-400: var(--surface-400);
+	--color-surface-500: var(--surface-500);
+	--color-surface-600: var(--surface-600);
+	--color-surface-700: var(--surface-700);
+	--color-surface-800: var(--surface-800);
+	--color-surface-900: var(--surface-900);
+	--font-main: var(--font-main);
 }
-
 
 /* ------------------------------------------------------------------------- configuracion clases globales ------------------------------------------------------------------------- */
 
 body {
-  font-family: var(--font-main);
-
+	font-family: var(--font-main);
+	background-color: var(--bg-900);
+	color: var(--bg-100);
 }
