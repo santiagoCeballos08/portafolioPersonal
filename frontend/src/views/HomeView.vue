@@ -1,10 +1,9 @@
 <script lang="ts" setup>
-
+import BannerComponent from '@/components/home/BannerComponent.vue';
 </script>
 <template>
-	<div>
-
-	</div>
+	<!-- IMPORTACION DE COMPONENTES HOME -->
+	<banner-component />
 </template>
 
 

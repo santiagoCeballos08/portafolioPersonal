@@ -5,8 +5,9 @@ export const personalCVData: CVData = {
 	location: 'Medellín - Colombia', //[cite: 1]
 	phone: '3197846786', //[cite: 1]
 	email: 'sceballos180@gmail.com', //[cite: 1]
-	summary:
-		'Ingeniero de software Full Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web, APIs y plataformas empresariales de alto rendimiento[cite: 1]. Especializado en tecnologías como Laravel, Vue.js, Node.js y SQL, participando en proyectos enfocados en escalabilidad, optimización y arquitectura de soluciones[cite: 1].',
+	summary:`Ingeniero de software Full Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web, APIs y plataformas empresariales de alto rendimiento. Especializado en tecnologías como Laravel, Vue.js, Node.js y SQL, participando en proyectos enfocados en escalabilidad, optimización y arquitectura de soluciones.
+				Experiencia en el desarrollo de plataformas gubernamentales, sistemas empresariales y soluciones digitales modernas, aplicando buenas prácticas de desarrollo, metodologías ágiles y estándares de calidad.
+				Orientado a la resolución de problemas, mejora continua y construcción de software eficiente, mantenible y escalable `,
 	experiences: [
 		{
 			role: 'Desarrollador Frontend Mid-Senior', //[cite: 1]

@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import { useCv } from '../composables/useCv';
+
+const { cvInfo, printCV } = useCv();
+import { Printer, MapPin, Smartphone, Mail } from '@lucide/vue';
+
+</script>
 <template>
 	<div class="min-h-screen bg-slate-100 print:bg-white text-slate-800 font-sans py-10 px-4 print:p-0">
 		<!-- Barra superior de control (Se oculta al imprimir) -->
@@ -6,8 +13,8 @@
 				← Volver al Inicio
 			</router-link>
 			<button @click="printCV"
-				class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg shadow transition-all cursor-pointer">
-				🖨️ Imprimir / Guardar en PDF
+				class="flex gap-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg shadow transition-all cursor-pointer">
+				<printer /> Imprimir / Guardar en PDF
 			</button>
 		</div>
 
@@ -27,9 +34,13 @@
 					</h2>
 				</div>
 				<div class="text-xs sm:text-sm text-slate-600 space-y-1 sm:text-right">
-					<p>📍 {{ cvInfo.location }}</p>
-					<p>📧 {{ cvInfo.email }}</p>
-					<p>📱 {{ cvInfo.phone }}</p>
+					<div class="icon-pin flex gap-2"><map-pin /> {{ cvInfo.location }}</div>
+					<div class="icon-pin flex gap-2">
+						<Mail /> {{ cvInfo.email }}
+					</div>
+					<div class="icon-pin flex gap-2">
+						<Smartphone /> {{ cvInfo.phone }}
+					</div>
 				</div>
 			</header>
 
@@ -96,11 +107,7 @@
 	</div>
 </template>
 
-<script setup lang="ts">
-import { useCv } from '../composables/useCv';
 
-const { cvInfo, printCV } = useCv();
-</script>
 
 <style scoped>
 @media print {
