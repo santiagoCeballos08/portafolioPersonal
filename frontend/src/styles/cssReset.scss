@@ -1,0 +1,129 @@
+
+/* Reset de márgenes con :where() para no inflar la especificidad
+   (así puedes sobreescribir cualquier cosa sin !important) */
+// :where(*, *::before, *::after) {
+// 	margin: 0;
+// }
+
+html {
+	-webkit-text-size-adjust: 100%;
+	color-scheme: light dark;
+	hanging-punctuation: first last;
+}
+
+body {
+	min-height: 100svh; /* svh en vez de vh: evita el salto por la barra del navegador móvil */
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	font-synthesis: none; /* evita negritas/itálicas falsas si la fuente no las incluye */
+}
+
+/* Elementos multimedia responsivos por defecto */
+img,
+picture,
+svg,
+video,
+canvas {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Los formularios no heredan tipografía por defecto: se la damos explícita */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	color: inherit;
+	letter-spacing: inherit;
+}
+
+button,
+[role='button'] {
+	cursor: pointer;
+}
+
+button:disabled,
+[aria-disabled='true'] {
+	cursor: not-allowed;
+}
+
+/* Tipografía: evita títulos "huérfanos" y mejora el corte de párrafos */
+:where(h1, h2, h3, h4, h5, h6) {
+	text-wrap: balance;
+	overflow-wrap: break-word;
+}
+
+:where(p, li, figcaption) {
+	text-wrap: pretty;
+	overflow-wrap: break-word;
+}
+
+a {
+	color: inherit;
+	text-decoration-skip-ink: auto;
+}
+
+/* Listas "de datos" sin bullets, pero mantiene semántica accesible */
+:where(ul[role='list'], ol[role='list']) {
+	list-style: none;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+}
+
+textarea:not([rows]) {
+	min-height: 10em;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+}
+
+/* Color de acento nativo para checkboxes, radios, sliders, progress */
+input,
+progress {
+	accent-color: var(--primary-600, currentColor);
+}
+
+/* Foco visible consistente entre navegadores, solo con teclado */
+:focus-visible {
+	outline: 2px solid var(--secondary-500, currentColor);
+	outline-offset: 2px;
+}
+
+/* Scroll suave, mas respetando a quien pidió reducir movimiento */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Crea un contexto de apilamiento propio para el root de la app
+   (evita bugs de z-index con overlays/portales de librerías) */
+#root,
+#__next {
+	isolation: isolate;
+}

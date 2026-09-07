@@ -3,10 +3,10 @@
 </script>
 
 <template>
-	<article class="main__banner__hero ">
-		<section class="grid grid-col-1 main__banner md:grid-cols-2">
-			<picture class="conent__image">
-				<img src="" alt="picture aboutme">
+	<article class="main__banner__hero max-w-[90svw] min-h-[50svh]  mx-auto bg-dark-800">
+		<section class="grid grid-col-1 main__banner md:grid-cols-2 ">
+			<picture class="content__image">
+				<img src="/assets/imgs/aboutme.webp" alt="Picture about me" class="about-image">
 			</picture>
 			<div>
 				<p>hola, soy santiago</p>
@@ -17,4 +17,4 @@
 </template>
 
 
-<style></style>
+<style src="../../styles/banner/styles.css"></style>

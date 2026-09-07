@@ -1,6 +1,23 @@
 @import 'tailwindcss';
 
 /* ------------------------------------------------------------------------- configuracion global y utilidades ------------------------------------------------------------------------- */
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: var(--font-main);
+	background-color: var(--bg-900);
+	color: var(--bg-100);
+}
 
 :root {
 	/* ==========================================
@@ -46,10 +63,10 @@
 	--surface-100: oklch(0.968 0.007 247.9);
 	--surface-200: oklch(0.929 0.013 255.5);
 	--surface-300: oklch(0.869 0.022 252.9);
-	--surface-400: xoklch(0.704 0.04 256.8);
+	--surface-400: oklch(0.704 0.04 256.8);
 	--surface-500: oklch(0.554 0.046 257.4);
 	--surface-600: oklch(0.446 0.043 257.3);
-	--surface-700: xoklch(0.372 0.044 257.3);
+	--surface-700: oklch(0.372 0.044 257.3);
 	--surface-800: oklch(0.265 0.063 277.2); /* Tarjetas secundarias */
 	--surface-900: oklch(0.208 0.04 277.3); /* Contenedores oscuros elevados */
 
@@ -116,9 +133,3 @@
 }
 
 /* ------------------------------------------------------------------------- configuracion clases globales ------------------------------------------------------------------------- */
-
-body {
-	font-family: var(--font-main);
-	background-color: var(--bg-900);
-	color: var(--bg-100);
-}
