@@ -3,18 +3,23 @@
 </script>
 
 <template>
-	<article class="main__banner__hero max-w-[90svw] min-h-[50svh]  mx-auto bg-dark-800">
-		<section class="grid grid-col-1 main__banner md:grid-cols-2 ">
-			<picture class="content__image">
+	<article class="main__banner__hero max-w-[90svw] lg:min-h-[50svh] mx-auto bg-dark-800 ">
+		<section class="grid grid-col-1 main__banner md:grid-cols-2 min-h-full">
+			<picture class="content__image self-center min-full ">
 				<img src="/assets/imgs/aboutme.webp" alt="Picture about me" class="about-image">
 			</picture>
-			<div>
-				<p>hola, soy santiago</p>
-				<h1>Desarrollador Fullstak</h1>
+			<div class="min-full flex justify-center flex-col min-h-[50svh]">
+				<span class="text-3xl ">hola, soy santiago</span>
+				<h1 class="  text-6xl font-bold lg:text-8xl">Senior<span> { Fullstack } <br></span> web Developer</h1>
+
+				<p class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis adipisci illo tenetur
+					asperiores
+					quod neque dolor nulla, dolorem doloremque tempora aperiam fuga, quam consequatur odit eaque! Natus
+					harum accusamus explicabo!</p>
 			</div>
 		</section>
 	</article>
 </template>
 
 
-<style src="../../styles/banner/styles.css"></style>
+<style src="../../styles/banner/styles.scss"></style>
