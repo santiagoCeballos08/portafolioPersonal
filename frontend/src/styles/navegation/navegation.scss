@@ -1,0 +1,243 @@
+/* ==========================================================================
+   VARIABLES DE APOYO
+   ========================================================================== */
+$nav-height: 7rem;
+$sidebar-width: 20svw;
+$transition-speed: 0.3s;
+
+/* ==========================================================================
+   NAVBAR SUPERIOR (Mobile-First)
+   ========================================================================== */
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: $nav-height;
+	background-color: var(--color-surface-100);
+	padding-inline: 1.5rem;
+	border-radius: 0.5rem;
+
+	&__left {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+	}
+
+	&__menu-btn {
+		background: transparent;
+		border: none;
+		color: var(--color-dark-300);
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		padding: 0.5rem;
+		transition: color 0.2s ease;
+
+		&:hover {
+			color: var(--color-primary-500);
+		}
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-weight: 700;
+		font-size: 1.25rem;
+		color: var(--color-dark-50);
+		text-decoration: none;
+
+		&-code {
+			color: var(--color-primary-500);
+		}
+	}
+
+	/* Oculto por defecto en móvil, visible en desktop */
+	&__center {
+		display: none;
+
+		@media (min-width: 64rem) {
+			display: block;
+		}
+	}
+
+	&__links {
+		display: flex;
+		gap: 2rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__link {
+		color: var(--color-dark-300);
+		text-decoration: none;
+		font-weight: 500;
+		transition: color 0.2s ease;
+
+		&:hover {
+			color: var(--color-primary-500);
+		}
+	}
+
+	&__right {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+	}
+
+	/* Oculto por defecto en móvil, visible en tablets/desktop */
+	&__socials {
+		display: none;
+		gap: 1rem;
+
+		@media (min-width: 48rem) {
+			display: flex;
+		}
+	}
+
+	&__social-link {
+		color: var(--color-dark-300);
+		text-decoration: none;
+		font-size: 1rem;
+		font-weight: bold;
+		transition: color 0.2s ease;
+
+		&:hover {
+			color: var(--color-primary-500);
+		}
+	}
+
+	&__theme-btn {
+		background: transparent;
+		border: none;
+		color: var(--color-primary-500);
+		cursor: pointer;
+		padding: 0.5rem;
+		display: flex;
+		align-items: center;
+	}
+}
+
+/* ==========================================================================
+   SIDEBAR DRAWER (Mobile-First)
+   ========================================================================== */
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	/* En móvil ocupa un ancho cómodo de pantalla; en desktop adopta el svw */
+	width: 85%;
+	max-width: 22rem;
+	height: 100vh;
+	background-color: var(--color-surface-50);
+	z-index: 100;
+	transform: translateX(-100%);
+	transition: transform $transition-speed ease;
+	padding: 2.5rem;
+	overflow-y: auto;
+	border-right: 0.0625rem solid var(--color-surface-200);
+
+	/* A partir de pantallas grandes, se aplica el ancho en svw personalizado */
+	@media (min-width: 64rem) {
+		width: $sidebar-width;
+		max-width: none;
+	}
+
+	&--open {
+		transform: translateX(0);
+	}
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 2.5rem;
+	}
+
+	&__title {
+		font-size: 1.5rem;
+		color: var(--color-dark-50);
+		font-weight: 700;
+	}
+
+	&__close-btn {
+		background: transparent;
+		border: none;
+		color: var(--color-primary-500);
+		cursor: pointer;
+		padding: 0.5rem;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&__text {
+		font-size: 0.875rem;
+		color: var(--color-dark-300);
+		line-height: 1.6;
+	}
+
+	&__contact-group {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	&__label {
+		font-size: 0.75rem;
+		color: var(--color-dark-400);
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	&__value {
+		font-size: 0.875rem;
+		color: var(--color-dark-50);
+		text-decoration: none;
+		line-height: 1.5;
+
+		&[href]:hover {
+			color: var(--color-primary-500);
+		}
+	}
+
+	&__socials-list {
+		display: flex;
+		gap: 1rem;
+
+		a {
+			color: var(--color-dark-50);
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 1rem;
+			transition: color 0.2s ease;
+
+			&:hover {
+				color: var(--color-primary-500);
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   OVERLAY
+   ========================================================================== */
+.sidebar-overlay {
+	position: fixed;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(0.125rem);
+	z-index: 90;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity $transition-speed ease;
+
+	&--active {
+		opacity: 1;
+		pointer-events: auto;
+	}
+}

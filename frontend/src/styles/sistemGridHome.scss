@@ -1,0 +1,172 @@
+// ==========================================================================
+// VARIABLES DE GRID Y ESPACIADO (Todo en REM)
+// Nota: Asumiendo el estándar del navegador (1rem = 16px).
+// ==========================================================================
+
+$container-max-width: 140rem; // ~1200px (Ancho máximo del diseño)
+$gap-sm: 1rem; // ~16px
+$gap-md: 1.5rem; // ~24px (Espaciado interno de cards)
+$gap-lg: 2.5rem; // ~40px (Espaciado entre columnas grandes)
+$gap-xl: 5rem; // ~80px (Espaciado entre secciones completas)
+
+// ==========================================================================
+// CONTENEDORES Y ANCHOS PERSONALIZADOS
+// ==========================================================================
+
+// Contenedor principal centrado
+.container {
+	width: 100%;
+	max-width: $container-max-width;
+	margin-inline: auto;
+	padding-inline: $gap-md; // Padding lateral para móviles
+}
+
+// Sobreescritura de contenedor (Fluido de lado a lado)
+.container-fluid {
+	width: 100%;
+	max-width: 100%;
+	padding-inline: $gap-md;
+}
+
+// Clases utilitarias de anchos personalizados
+.w-full {
+	width: 100%;
+}
+.w-75 {
+	width: 75%;
+}
+.w-50 {
+	width: 50%;
+}
+
+.max-w-sm {
+	max-width: 30rem;
+} // ~480px
+.max-w-md {
+	max-width: 48rem;
+} // ~768px
+.max-w-lg {
+	max-width: 64rem;
+} // ~1024px
+
+// Utilidad global de grid
+.grid {
+	display: grid;
+}
+.gap-sm {
+	gap: $gap-sm;
+}
+.gap-md {
+	gap: $gap-md;
+}
+.gap-lg {
+	gap: $gap-lg;
+}
+.section-spacing {
+	margin-block: $gap-xl;
+}
+
+// ==========================================================================
+// SISTEMA DE GRID POR ÁREAS (Basado en tu diseño)
+// ==========================================================================
+
+/* 1. Área Hero (Foto Izquierda, Info Derecha) */
+.grid-hero {
+	display: grid;
+	gap: $gap-lg;
+	// Mobile-first: apilado
+	grid-template-areas:
+		'photo'
+		'info';
+
+	// Desktop
+	@media (min-width: 48rem) {
+		grid-template-columns: 25rem 1fr; // El avatar tiene un ancho fijo, el resto fluye
+		grid-template-areas: 'photo info';
+		align-items: center;
+	}
+}
+.area-hero-photo {
+	grid-area: photo;
+}
+.area-hero-info {
+	grid-area: info;
+}
+
+/* 2. Área de Estadísticas (4 Columnas) */
+.grid-stats {
+	display: grid;
+	gap: $gap-md;
+	grid-template-areas:
+		'stat1 stat2'
+		'stat3 stat4';
+
+	@media (min-width: 64rem) {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: 'stat1 stat2 stat3 stat4';
+	}
+}
+.area-stat-1 {
+	grid-area: stat1;
+}
+.area-stat-2 {
+	grid-area: stat2;
+}
+.area-stat-3 {
+	grid-area: stat3;
+}
+.area-stat-4 {
+	grid-area: stat4;
+}
+
+/* 3. Área de Layout Asimétrico (Ej: Education / Experience) */
+.grid-asymmetric {
+	display: grid;
+	gap: $gap-lg;
+	grid-template-areas:
+		'left'
+		'right';
+
+	@media (min-width: 64rem) {
+		// Columna izquierda más pequeña (ej. fechas/empresa) y derecha más amplia (descripción)
+		grid-template-columns: 20rem 1fr;
+		grid-template-areas: 'left right';
+	}
+}
+.area-left {
+	grid-area: left;
+}
+.area-right {
+	grid-area: right;
+}
+
+/* 4. Área de 3 Columnas (Servicios, Blog Cards) */
+.grid-3-cols {
+	display: grid;
+	gap: $gap-md;
+	grid-template-areas:
+		'col1'
+		'col2'
+		'col3';
+
+	@media (min-width: 48rem) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			'col1 col2'
+			'col3 col3'; // En tablet, el 3ro ocupa el ancho completo abajo
+	}
+
+	@media (min-width: 64rem) {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: 'col1 col2 col3';
+	}
+}
+.area-col-1 {
+	grid-area: col1;
+}
+.area-col-2 {
+	grid-area: col2;
+}
+.area-col-3 {
+	grid-area: col3;
+}
