@@ -188,14 +188,12 @@ $transition-speed: 0.3s;
 	}
 
 	&__label {
-		font-size: 0.75rem;
 		color: var(--color-dark-400);
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
 	}
 
 	&__value {
-		font-size: 0.875rem;
 		color: var(--color-dark-50);
 		text-decoration: none;
 		line-height: 1.5;
@@ -212,8 +210,6 @@ $transition-speed: 0.3s;
 		a {
 			color: var(--color-dark-50);
 			text-decoration: none;
-			font-weight: bold;
-			font-size: 1rem;
 			transition: color 0.2s ease;
 
 			&:hover {

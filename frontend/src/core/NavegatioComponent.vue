@@ -72,24 +72,16 @@ const {
 			</p>
 
 			<div class="sidebar__contact-group">
-				<h4 class="sidebar__label">Phone Number</h4>
-				<p class="sidebar__value">+1-234-567-8901</p>
+				<h4 class="sidebar__label">Numero telefonico</h4>
+				<p class="sidebar__value">+57 3197846786</p>
 			</div>
 
 			<div class="sidebar__contact-group">
 				<h4 class="sidebar__label">Email</h4>
-				<a href="mailto:contact@james.dev" class="sidebar__value">contact@james.dev</a>
+				<a href="mailto:sceballos180@gmail.com" class="sidebar__value">sceballos180@gmail.com</a>
 			</div>
 
-			<div class="sidebar__contact-group">
-				<h4 class="sidebar__label">Skype</h4>
-				<p class="sidebar__value">JamesDeveloper</p>
-			</div>
 
-			<div class="sidebar__contact-group">
-				<h4 class="sidebar__label">Address</h4>
-				<p class="sidebar__value">0811 Erdman Prairie Road,<br>Jonville, California 90210</p>
-			</div>
 
 			<div class="sidebar__contact-group">
 				<h4 class="sidebar__label">Social</h4>
