@@ -12,6 +12,15 @@ export interface Education {
 	year: string;
 }
 
+export interface ServiceItem {
+	id: string;
+	title: string;
+	shortTitle?: string;
+	description: string;
+	icon: 'frontend' | 'backend' | 'solutions' | string;
+	tags: string[];
+}
+
 export interface CVData {
 	name: string;
 	title: string;
@@ -23,4 +32,5 @@ export interface CVData {
 	education: Education[];
 	techSkills: string[];
 	softSkills: string[];
+	services: ServiceItem[];
 }

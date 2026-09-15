@@ -70,4 +70,33 @@ export const personalCVData: CVData = {
 		'Pensamiento crítico',
 		'Trabajo en equipo', //[cite: 1]
 	],
+	services: [
+		{
+			id: 'frontend',
+			title: 'Desarrollo Frontend & UI/UX',
+			shortTitle: 'Frontend & UI/UX',
+			description:
+				'Creación de interfaces web y móviles modernas, interactivas, accesibles y de alto rendimiento con Vue.js, TypeScript y Tailwindcss. Implementación fiel de prototipos Figma y diseño responsivo.',
+			icon: 'frontend',
+			tags: ['Vue.js', 'TypeScript', 'Tailwindcss', 'PWA', 'Figma', 'UI/UX'],
+		},
+		{
+			id: 'backend',
+			title: 'Backend & APIs Escalables',
+			shortTitle: 'Backend & APIs',
+			description:
+				'Diseño e implementación de APIs robustas y seguras bajo arquitectura limpia (REST y Onion). Alta especialización en Node.js, Express, NestJS y PHP Laravel con bases de datos SQL.',
+			icon: 'backend',
+			tags: ['Node.js', 'Express / NestJS', 'PHP Laravel', 'SQL', 'Arquitectura Onion', 'REST APIs'],
+		},
+		{
+			id: 'solutions',
+			title: 'Soluciones Web Empresariales',
+			shortTitle: 'Soluciones Full Stack',
+			description:
+				'Desarrollo integral de plataformas empresariales y gubernamentales de extremo a extremo. Enfoque en escalabilidad, optimización de procesos y entrega de valor bajo metodología Scrum.',
+			icon: 'solutions',
+			tags: ['Full Stack', 'Sistemas Empresariales', 'Optimización', 'Scrum', 'Liderazgo'],
+		},
+	],
 };

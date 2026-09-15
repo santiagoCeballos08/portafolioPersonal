@@ -5,7 +5,7 @@ import NavegatioComponent from '@/core/NavegatioComponent.vue';
 // FUTURAS IMPORTACIONES PREPARADAS
 // --------------------------------------------------
 // import TrustedComponent from '@/components/home/TrustedComponent.vue';
-// import ServicesComponent from '@/components/home/ServicesComponent.vue';
+import ServicesComponent from '@/components/home/ServicesComponent.vue';
 // import ResumeComponent from '@/components/home/ResumeComponent.vue';
 // import WorksComponent from '@/components/home/WorksComponent.vue';
 // import SkillsComponent from '@/components/home/SkillsComponent.vue';
@@ -30,7 +30,7 @@ import NavegatioComponent from '@/core/NavegatioComponent.vue';
 
 		<!-- 3. Servicios -->
 		<section class="section-wrapper">
-			<!-- <services-component /> -->
+			<services-component />
 		</section>
 
 		<!-- 4. Currículum (Educación y Experiencia) -->
