@@ -21,6 +21,21 @@ export interface ServiceItem {
 	tags: string[];
 }
 
+export interface ProjectItem {
+	id: string;
+	title: string;
+	category: string;
+	client?: string;
+	period?: string;
+	role?: string;
+	description: string;
+	image: string;
+	liveUrl: string;
+	githubUrl?: string;
+	tags: string[];
+	featured?: boolean;
+}
+
 export interface CVData {
 	name: string;
 	title: string;
@@ -33,4 +48,5 @@ export interface CVData {
 	techSkills: string[];
 	softSkills: string[];
 	services: ServiceItem[];
+	projects: ProjectItem[];
 }

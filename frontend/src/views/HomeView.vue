@@ -7,7 +7,7 @@ import NavegatioComponent from '@/core/NavegatioComponent.vue';
 // import TrustedComponent from '@/components/home/TrustedComponent.vue';
 import ServicesComponent from '@/components/home/ServicesComponent.vue';
 // import ResumeComponent from '@/components/home/ResumeComponent.vue';
-// import WorksComponent from '@/components/home/WorksComponent.vue';
+import WorksComponent from '@/components/home/WorksComponent.vue';
 // import SkillsComponent from '@/components/home/SkillsComponent.vue';
 // import BlogComponent from '@/components/home/BlogComponent.vue';
 // import ContactComponent from '@/components/home/ContactComponent.vue';
@@ -40,7 +40,7 @@ import ServicesComponent from '@/components/home/ServicesComponent.vue';
 
 		<!-- 5. Trabajos Recientes -->
 		<section class="section-wrapper">
-			<!-- <works-component /> -->
+			<works-component />
 		</section>
 
 		<!-- 6. Habilidades (Skills) -->
